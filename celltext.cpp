@@ -3,8 +3,6 @@
 #include <time.h>
 #include <iostream>
 using namespace std;
-void init_map(int** map, int x, int y);
-void itterate_map(int** map, int x, int y);
 
 class MapBuilder
 {
@@ -35,9 +33,7 @@ class MapBuilder
       for(int j = 0; j < y_size; j++)
       {
           map[i][j] = rand()%2;
-          printf("%i",map[i][j]);
       }
-      printf("\n");
     }
 
   }
@@ -55,12 +51,20 @@ class MapBuilder
           {
               map[i][j] = 0;
           }
-          printf("%i",map[i][j]);
+      }
+    }
+  }
+  void print_map()
+  {
+    for(int i = 0; i < x_size; i++)
+    {
+      for(int j = 0; j < y_size; j++)
+      {
+        printf("%i",map[i][j]);
       }
       printf("\n");
     }
   }
-
   private:
     int** map;
     int x_size, y_size;
@@ -70,11 +74,10 @@ int main (int argc, char* argv[])
 {
   MapBuilder builder (atoi(argv[1]),atoi(argv[2]));
   builder.init_map();
-  cout << "-----------\n";
   for (int i=0; i<atoi(argv[3]); i++)
   {
-    cout << "-----------\n";
     builder.itterate_map();
   }
+  builder.print_map();
   return 0;
 }
