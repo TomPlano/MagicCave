@@ -1,7 +1,7 @@
 CPP = g++
 LINK = g++
 PROJNAME = Gen.app
-OBJS = main.o factories/mapFactory.o
+OBJS = main.o factories/mapFactory.o products/mapProduct.o products/tileProduct.o
 all: $(OBJS)
 	$(LINK) $(OBJS) -o $(PROJNAME)
 

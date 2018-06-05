@@ -3,62 +3,92 @@
 #include <time.h>
 #include <iostream>
 #include "mapFactory.h"
+#include "../products/mapProduct.h"
+#include "../products/tileProduct.h"
 
+
+//public
 MapFactory::MapFactory(int x, int y)
 {
-  x_size = x;
-  y_size = y;
-  map = (int**)malloc(x_size*sizeof(int*));
-  for(int i = 0; i < x; i++)
-  {
-      map[i] = (int*)malloc(x_size*sizeof(int));
-  }
+  xSize = x;
+  ySize = y;
+  allocMap(xSize, ySize);
 }
 MapFactory::~MapFactory()
 {
-  for(int i = 0; i < x_size; i++)
+  for(int i = 0; i < xSize; i++)
   {
-      free(map[i]);
+      free(cellFill[i]);
   }
-  free(map);
+  free(cellFill);
 }
+TileSet MapFactory::CreateMap(int itterations)
+{
+  init_map();
+  for(int i = 0; i < itterations; i++)
+  {
+    itterate_map();
+  }
+  //connect rooms etc
+
+  //populate mpa with tiles
+  TileSet tileMap (xSize, ySize); //from mapProduct.h
+  for(int i = 0; i < xSize; i++)
+  {
+    for(int j = 0; j < ySize; j++)
+    {
+      tileMap.tiles[i][j] = Tile();
+    }
+  }
+
+  return tileMap;
+}
+void MapFactory::print_map()
+{
+  for(int i = 0; i < xSize; i++)
+  {
+    for(int j = 0; j < ySize; j++)
+    {
+      printf("%i",cellFill[i][j]);
+    }
+    printf("\n");
+  }
+}
+//private
 void MapFactory::init_map()
 {
   srand(time(NULL));
-  for(int i = 0; i < x_size; i++)
+  for(int i = 0; i < xSize; i++)
   {
-    for(int j = 0; j < y_size; j++)
+    for(int j = 0; j < ySize; j++)
     {
-        map[i][j] = rand()%2;
+        cellFill[i][j] = rand()%2;
     }
   }
 
 }
 void MapFactory::itterate_map()
 {
-  for(int i = 1; i < x_size-1; i++)
+  for(int i = 1; i < xSize-1; i++)
   {
-    for(int j = 1; j < y_size-1; j++)
+    for(int j = 1; j < ySize-1; j++)
     {
-        if(map[i-1][j-1]+map[i-1][j]+map[i-1][j+1]+map[i][j-1]+map[i][j]+map[i][j+1]+map[i+1][j-1]+map[i+1][j]+map[i+1][j+1]>4)
+        if(cellFill[i-1][j-1]+cellFill[i-1][j]+cellFill[i-1][j+1]+cellFill[i][j-1]+cellFill[i][j]+cellFill[i][j+1]+cellFill[i+1][j-1]+cellFill[i+1][j]+cellFill[i+1][j+1]>4)
         {
-            map[i][j] = 1;
+            cellFill[i][j] = 1;
         }
         else
         {
-            map[i][j] = 0;
+            cellFill[i][j] = 0;
         }
     }
   }
 }
-void MapFactory::print_map()
+void MapFactory::allocMap(int xSize, int ySize)
 {
-  for(int i = 0; i < x_size; i++)
+  cellFill = (int**)malloc(xSize*sizeof(int*));
+  for(int i = 0; i < xSize; i++)
   {
-    for(int j = 0; j < y_size; j++)
-    {
-      printf("%i",map[i][j]);
-    }
-    printf("\n");
+      cellFill[i] = (int*)malloc(ySize*sizeof(int));
   }
 }
