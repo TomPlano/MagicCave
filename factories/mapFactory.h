@@ -16,7 +16,7 @@ class MapFactory
     void alloc_map(int xSize, int ySize);
     int wall_check(int radius,int x, int y);
     void walls_up();
-
+    void prevent_dc_rooms();
     bool** cellFill;
     int xSize, ySize;
 };
