@@ -1,5 +1,5 @@
-#ifndef MAP_BUILDER
-#define MAP_BUILDER
+#ifndef MAP_FACTORY
+#define MAP_FACOTRY
 
 class MapFactory
 {
