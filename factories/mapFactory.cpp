@@ -22,7 +22,7 @@ MapFactory::~MapFactory()
   }
   free(cellFill);
 }
-TileSet MapFactory::create_map(int itterations)
+DungeonMap MapFactory::create_map(int itterations)
 {
   init_map();
   for(int i = 0; i < 4; i++)
@@ -37,17 +37,16 @@ TileSet MapFactory::create_map(int itterations)
 
   }
 
-
-  TileSet tileMap (xSize, ySize); //from mapProduct.h
+  DungeonMap dungeon_map (xSize, ySize); //from mapProduct.h
   for(int i = 0; i < xSize; i++)
   {
     for(int j = 0; j < ySize; j++)
     {
-      tileMap.tiles[i][j] = Tile();// Tile(cellFill[i][j])
+      dungeon_map.tiles[i][j] = Tile(cellFill[i][j]);
     }
   }
 
-  return tileMap;
+  return dungeon_map;
 }
 void MapFactory::print_map()
 {

@@ -1,7 +1,8 @@
 #include "mapProduct.h"
+#include <stdio.h>
 #include <stdlib.h>
 
-TileSet::TileSet(int _xSize, int _ySize)
+DungeonMap::DungeonMap(int _xSize, int _ySize)
 {
   xSize = _xSize;
   ySize = _ySize;
@@ -11,10 +12,21 @@ TileSet::TileSet(int _xSize, int _ySize)
       tiles[i] = (Tile*)malloc(ySize*sizeof(Tile));
   }
 }
-TileSet::~TileSet()
+DungeonMap::~DungeonMap()
 {
   for(int i = 0; i < xSize; i++)
   {
       free(tiles[i]);
+  }
+}
+void DungeonMap::print_map()
+{
+  for(int i = 0; i < xSize; i++)
+  {
+    for(int j = 0; j < ySize; j++)
+    {
+      tiles[i][j].print_tile();
+    }
+    printf("\n");
   }
 }

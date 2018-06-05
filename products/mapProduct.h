@@ -3,13 +3,15 @@
 #define MAP_PRODUCT
 #include "tileProduct.h"
 
-class TileSet
+class DungeonMap
 {
   public:
-    TileSet(int _xSize, int _ySize);
-    ~TileSet();
+    DungeonMap(int _xSize, int _ySize);
+    ~DungeonMap();
+    void print_map();
     Tile** tiles;
     int xSize, ySize;
+
 };
 
 #endif
