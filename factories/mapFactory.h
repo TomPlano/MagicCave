@@ -13,11 +13,13 @@ class MapFactory
   private:
     void init_map();
     void itterate_map(bool extra_rule);
-    void alloc_map(int xSize, int ySize);
+    bool** alloc_map();
     int wall_check(int radius,int x, int y);
     void walls_up();
     void prevent_dc_rooms();
+    void clear(bool** grid);
     bool** cellFill;
+    bool** buffer;
     int xSize, ySize;
 };
 

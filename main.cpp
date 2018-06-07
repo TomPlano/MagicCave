@@ -1,4 +1,7 @@
 #include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+
 #include "factories/mapFactory.h"
 #include "products/mapProduct.h"
 
