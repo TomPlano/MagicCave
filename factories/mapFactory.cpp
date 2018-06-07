@@ -28,15 +28,12 @@ DungeonMap MapFactory::create_map(int itterations)
 {
 
   init_map();
-  //prevent_dc_rooms();
   for(int i = 0; i < 4; i++)
   {
-    //walls_up();
     itterate_map(true);
   }
   for(int i = 0; i < 3; i++)
   {
-    //walls_up();
     itterate_map(false);
 
   }
@@ -123,31 +120,6 @@ int MapFactory::wall_check(int radius, int x, int y)
     }
   }
   return total;
-}
-void MapFactory::walls_up()
-{
-  for (int i =0; i < xSize; i ++) cellFill[i][0] = 1;
-  for (int i =0; i < xSize; i ++) cellFill[i][ySize-1] = 1;
-  for (int i =0; i < ySize; i ++) cellFill[0][i] = 1;
-  for (int i =0; i < ySize; i ++) cellFill[xSize-1][i] = 1;
-}
-void MapFactory::prevent_dc_rooms()
-{
-  //for (int i =0; i < xSize; i ++)
-  //  cellFill[i][i] = 0;
-  for (int i =1; i < ySize-1; i ++)
-  {
-    if (rand()%100<5)
-    {
-      for (int j =1; j < xSize; j ++)
-      {
-    cellFill[j][(i)-1] = 1;
-    cellFill[j][(i)] = 1;
-    cellFill[j][(i)+1] = 1;
-  }
-}
-  }
-
 }
 void MapFactory::clear(bool** grid)
 {

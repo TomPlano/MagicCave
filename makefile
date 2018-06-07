@@ -5,18 +5,16 @@ OBJS = main.o factories/mapFactory.o products/mapProduct.o products/tileProduct.
 all: $(OBJS)
 	$(LINK) $(OBJS) -o $(PROJNAME)
 
-debug: $(OBJS)
-	$(LINK) $(OBJS) -o $(PROJNAME) -g
 
 
 factories/%.o:%.c
-	$(CPP) -c $(input) -o $(output) -g
+	$(CPP) -c $(input) -o $(output) 
 
 products/%.o:%.c
-	$(CPP) -c $(input) -o $(output) -g
+	$(CPP) -c $(input) -o $(output)
 
 ./%.o:%.c
-	$(CPP) -c $(input) -o $(output) -g
+	$(CPP) -c $(input) -o $(output) 
 
 clean:
 	find . -name '*.o' -delete -type f
