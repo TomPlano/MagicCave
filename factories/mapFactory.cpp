@@ -3,6 +3,7 @@
 #include <string.h>
 #include <time.h>
 #include <iostream>
+#include <random>
 #include "mapFactory.h"
 #include "../products/mapProduct.h"
 #include "../products/tileProduct.h"
@@ -63,13 +64,16 @@ void MapFactory::print_map()
 //private
 void MapFactory::init_map()
 {
+  std::mt19937 rng;
+  rng.seed(std::random_device()());
 
-  srand(time(NULL));
+  std::uniform_int_distribution<std::mt19937::result_type> binom(0,99);
+
   for(int i = 0; i < xSize; i++)
   {
     for(int j = 0; j < ySize; j++)
     {
-      if (rand()%100>=45) cellFill[i][j] = 1; //walls are one
+      if (binom(rng)>=45) cellFill[i][j] = 1; //walls are one
       else cellFill[i][j] = 0; //floors are 0
     }
   }

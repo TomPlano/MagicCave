@@ -8,7 +8,7 @@ class MapFactory
   public:
     MapFactory(int x, int y);
     ~MapFactory();
-    DungeonMap create_map(int itterations);
+    DungeonMap create_map(int = 0);
     void print_map();
   private:
     void init_map();

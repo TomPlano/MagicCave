@@ -20,7 +20,7 @@ near the top of the newly formed cliffs. Each party told vastly different
 accounts of the contents of the cave and each had the treasure to back up their
 claims. It was finally determined that a more magical approach must be taken,
 and a team of skilled wizards was dispatched, in the hopes that the secretes of
-the cave would be made clear. It was to no avail however. All the was determined
+the cave would be made clear. It was to no avail however. All that was determined
 was that the cave was indeed changing its contents periodically and the
 mechanism was unknown. During this time treasure, monsters and even other
 people were discovered within the cave, all of which had no idea of the
