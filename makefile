@@ -1,17 +1,24 @@
 CPP = g++
 LINK = g++
 PROJNAME = Gen.app
-OBJS = main.o factories/mapFactory.o factories/trapFactory.o products/mapProduct.o products/tileProduct.o products/trapProduct.o
-all: $(OBJS)
+SRCDIRS = factories products
+OBJDIR=objects
+TEMP = main.o mapFactory.o trapFactory.o mapProduct.o tileProduct.o trapProduct.o
+OBJS=$(addprefix $(OBJDIR)/,$(TEMP))
+all: $(SRCDIRS) $(PROJNAME)
+
+$(SRCDIRS):
+	$(MAKE) -C $@
+
+$(PROJNAME): $(SRCDIRS) main.o
 	$(LINK) $(OBJS) -o $(PROJNAME) -std=c++11
 
-factories/%.o:%.cpp
-	cd factories
-	make
-products/%.o:%.cpp
-	cd products
-	make
+main.o: main.cpp
+	$(CPP) -std=c++11 -c $^ -o $(OBJDIR)/$@
 
 clean:
 	find . -name '*.o' -delete -type f
-	rm *.app
+	rm -f *.app
+	rm -f $(OBJSDIR)/*.o
+
+.PHONY: $(SRCDIRS)
