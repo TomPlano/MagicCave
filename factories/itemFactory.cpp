@@ -12,7 +12,8 @@ ItemFactory::ItemFactory()
   itemset.ParseStream(is);
 
   assert(itemset.IsObject());
-
+  assert(itemset.HasMember("Apparatus of Kwalish"));
+  printf("hello = %s\n", itemset[1]["page"].GetString());
   fclose(fp);
 }
 ItemFactory::~ItemFactory(){}
