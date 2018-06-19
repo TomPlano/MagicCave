@@ -7,7 +7,7 @@ class ItemFactory
   public:
     ItemFactory();
     ~ItemFactory();
-    DungeonItem create_item();
+    DungeonItem create_item(int player_lvl, int value);
   private:
     void init();
 
