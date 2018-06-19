@@ -7,12 +7,12 @@ as decided by players, c is some scalar (8 ish)
 
 This project contains git submodules, specially rapidjson.
 
-To build this project after cloning 
+To build this project after cloning
 1. git submodule init   //to create submodules
 2. git submodule update //to collect files from sub modules
 if step 2 fails run "git submodule sync" then repeat step 2.
 
-
+dependencies: cmake
 
 
 -Block Text
