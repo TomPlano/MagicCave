@@ -1,8 +1,6 @@
 #include "itemProduct.h"
 std::string DungeonItem::get_blocktext()
-{
-  return blocktext;
-}
+{return blocktext;}
 void DungeonItem::set_blocktext(std::string btext)
 {blocktext=btext;}
 int DungeonItem::get_value()

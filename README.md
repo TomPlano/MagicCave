@@ -5,6 +5,10 @@ specs:
 as decided by players, c is some scalar (8 ish)
 -large map is chopped to size and presented as different rooms.
 
+This project contains git submodules, specially rapidjson.
+
+to build this project after cloning, first run  "git submodule init" followed by git
+"submodule update" to collect files from sub modules
 
 
 
