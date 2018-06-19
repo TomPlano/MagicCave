@@ -3,7 +3,7 @@ LINK = g++
 PROJNAME = Gen.app
 SRCDIRS = factories products
 OBJDIR=objects
-TEMP = main.o mapFactory.o trapFactory.o mapProduct.o tileProduct.o trapProduct.o
+TEMP = main.o mapFactory.o trapFactory.o mapProduct.o tileProduct.o trapProduct.o lootFactory.o lootProduct.o itemFactory.o itemProduct.o
 OBJS=$(addprefix $(OBJDIR)/,$(TEMP))
 all: $(SRCDIRS) $(PROJNAME)
 

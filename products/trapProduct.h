@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 
 enum effect{
   Falling_Rocks,
@@ -55,6 +54,7 @@ private:
   counters countermeasures;
   trap_mods get_modifiers(std::mt19937 rng);
   trap_mods mods;
+  std::string blocktext;
 };
 
 #endif
