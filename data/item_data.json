@@ -1,4 +1,4 @@
-var item_data = {
+{
 "Adamantine Armor":{"rarity":"1","page":"dmg 150","limits":"medium or heavy, but not hide","attunement":"no","type":"Armor"},
 "Alchemy Jug":{"attunement":"no","type":"Wondrous Item","rarity":"1","page":"dmg 150"},
 "Ammunition, +1":{"limits":"any ammunition","page":"dmg 150","rarity":"1","type":"Weapon","attunement":"no"},
@@ -203,7 +203,7 @@ var item_data = {
 "Pearl of Power":{"limits":"spellcaster","rarity":"1","page":"dmg 184","type":"Wondrous Item","attunement":"yes"},
 "Perfume of Bewitching":{"type":"Wondrous Item","attunement":"no","rarity":"0","page":"xge 138"},
 "Periapt of Health":{"type":"Wondrous Item","attunement":"no","rarity":"1","page":"dmg 184"},
-"Periapt of Proof Against Poison":{"rarity":"2","page":"dmg 184","attunement":"no","type":"Wondrous Item"}
+"Periapt of Proof Against Poison":{"rarity":"2","page":"dmg 184","attunement":"no","type":"Wondrous Item"},
 "Periapt of Wound Closure":{"attunement":"yes","type":"Wondrous Item","rarity":"1","page":"dmg 184"},
 "Philter of Love":{"page":"dmg 184","rarity":"1","attunement":"no","type":"Potion"},
 "Pipe of Smoke Monsters":{"page":"xge 138","rarity":"0","attunement":"no","type":"Wondrous Item"},
@@ -380,5 +380,5 @@ var item_data = {
 "Well of Many Worlds":{"rarity":"4","page":"dmg 213","attunement":"no","type":"Wondrous Item"},
 "Wind Fan":{"rarity":"1","page":"dmg 213","attunement":"no","type":"Wondrous Item"},
 "Winged Boots":{"type":"Wondrous Item","attunement":"yes","page":"dmg 214","rarity":"1"},
-"Wings of Flying":{"page":"dmg 214","rarity":"2","type":"Wondrous Item","attunement":"yes"},
-};
+"Wings of Flying":{"page":"dmg 214","rarity":"2","type":"Wondrous Item","attunement":"yes"}
+}
