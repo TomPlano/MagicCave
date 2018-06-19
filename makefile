@@ -5,7 +5,7 @@ SRCDIRS = factories products
 OBJDIR=objects
 TEMP = main.o mapFactory.o trapFactory.o mapProduct.o tileProduct.o trapProduct.o lootFactory.o lootProduct.o itemFactory.o itemProduct.o
 OBJS=$(addprefix $(OBJDIR)/,$(TEMP))
-all: $(SRCDIRS) $(PROJNAME)
+all: $(SRCDIRS) $(PROJNAME) rapidjson
 
 $(SRCDIRS):
 	$(MAKE) -C $@
@@ -15,6 +15,12 @@ $(PROJNAME): $(SRCDIRS) main.o
 
 main.o: main.cpp
 	$(CPP) -std=c++11 -c $^ -o $(OBJDIR)/$@
+
+rapidjson:
+	mkdir rapidjson/build
+	cd rapidjson/build
+	cmake ..
+	make
 
 clean:
 	find . -name '*.o' -delete -type f
