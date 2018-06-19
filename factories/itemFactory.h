@@ -6,12 +6,19 @@
 #include "../rapidjson/include/rapidjson/document.h"
 #include <cstdio>
 #include <random>
+#include <sstream>  // Required for stringstreams
+#include <string>
+#include <stdio.h>
+#include <stdlib.h>
+
+
 class ItemFactory
 {
   public:
     ItemFactory();
     ~ItemFactory();
     DungeonItem create_item(int player_lvl, int value);
+    std::string IntToString ( int number );
   private:
     rapidjson::Document itemset;
     std::default_random_engine rng;
