@@ -23,7 +23,6 @@ class ItemFactory
     std::default_random_engine rng;
     std::discrete_distribution<int> default_dstro {50,30,14,5,1};
     Json::Value root;
-
 };
 
 #endif
