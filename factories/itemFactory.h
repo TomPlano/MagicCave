@@ -2,11 +2,13 @@
 #ifndef ITEM_FACTORY
 #define ITEM_FACTORY
 #include "../products/itemProduct.h"
+#include <iostream>
+#include <string>
 #include <cstdio>
 #include <random>
-#include <cstring>
 #include <stdio.h>
 #include <stdlib.h>
+#include <fstream>
 #include "../jsoncpp/dist/json/json.h"
 
 
