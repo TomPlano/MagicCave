@@ -16,11 +16,11 @@ $(PROJNAME): $(SRCDIRS) main.o
 main.o: main.cpp
 	$(CPP) -std=c++11 -c $^ -o $(OBJDIR)/$@
 
-.PHONY: rapidjson
+#.PHONY: rapidjson
 
-rapidjson:
-	mkdir -p ./rapidjson/build
-	cd ./rapidjson/build; cmake ..; make
+#rapidjson:
+#	mkdir -p ./rapidjson/build
+#	cd ./rapidjson/build; cmake ..; make
 
 clean:
 	find . -name '*.o' -delete -type f
