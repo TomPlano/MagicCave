@@ -46,8 +46,11 @@ DungeonItem ItemFactory::create_item(int player_lvl, int value)
   std::string str_rarity = std::to_string(int_rarity);
   std::string str_item = std::to_string(item_idx);
 
-  std::cout<<str_rarity<<":"<<root[str_rarity][str_item]["name"].asString()<<std::endl;
-  DungeonItem iprod;
+  DungeonItem iprod (root[str_rarity][str_item]["attunement"].asString(),
+                      root[str_rarity][str_item]["type"].asString(),
+                      root[str_rarity][str_item]["page"].asString(),
+                      root[str_rarity][str_item]["name"].asString(),
+                      root[str_rarity][str_item]["rarity"].asString());
   iprod.set_value(value);
   return iprod;
 }
