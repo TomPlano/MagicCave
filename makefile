@@ -3,9 +3,9 @@ LINK = g++
 PROJNAME = Gen.app
 SRCDIRS = factories products
 OBJDIR=objects
-TEMP = main.o mapFactory.o trapFactory.o mapProduct.o tileProduct.o trapProduct.o lootFactory.o lootProduct.o itemFactory.o itemProduct.o
+TEMP = main.o mapFactory.o trapFactory.o mapProduct.o tileProduct.o trapProduct.o lootFactory.o lootProduct.o itemFactory.o itemProduct.o  jsoncpp.o
 OBJS=$(addprefix $(OBJDIR)/,$(TEMP))
-all: $(SRCDIRS) $(PROJNAME) rapidjson
+all: jsoncpp $(SRCDIRS) $(PROJNAME) 
 
 $(SRCDIRS):
 	$(MAKE) -C $@
@@ -16,11 +16,8 @@ $(PROJNAME): $(SRCDIRS) main.o
 main.o: main.cpp
 	$(CPP) -std=c++11 -c $^ -o $(OBJDIR)/$@
 
-#.PHONY: rapidjson
-
-#rapidjson:
-#	mkdir -p ./rapidjson/build
-#	cd ./rapidjson/build; cmake ..; make
+jsoncpp:
+	cd ./jsoncpp;python amalgamate.py;cd ./dist; g++ -c jsoncpp.cpp -I../include/ -std=c++11; cp *.o ../../objects
 
 clean:
 	find . -name '*.o' -delete -type f
@@ -28,3 +25,4 @@ clean:
 	rm -f $(OBJSDIR)/*.o
 
 .PHONY: $(SRCDIRS)
+.PHONY: jsoncpp

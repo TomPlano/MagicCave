@@ -7,6 +7,7 @@
 #include <cstring>
 #include <stdio.h>
 #include <stdlib.h>
+#include "../jsoncpp/dist/json/json.h"
 
 
 class ItemFactory
@@ -19,6 +20,7 @@ class ItemFactory
   private:
     std::default_random_engine rng;
     std::discrete_distribution<int> default_dstro {50,30,14,5,1};
+    Json::Value root;
 
 };
 
