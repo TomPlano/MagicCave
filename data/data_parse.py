@@ -15,7 +15,7 @@ vvrare = dict()
 legendary = dict()
 
 
-with io.open("test_data.json", 'w', encoding='utf8') as outfile:
+with io.open("item_data.json", 'w', encoding='utf8') as outfile:
     ccount = 0;
     ucount = 0;
     rcount = 0;
@@ -40,7 +40,13 @@ with io.open("test_data.json", 'w', encoding='utf8') as outfile:
             lcount+=1
 
 
-    output = {  '0' : common,
+    output = {  'count' : {'c' : ccount,
+                            'u' : ucount,
+                            'r' : rcount,
+                            'v' : vcount,
+                            'l' : lcount
+                            },
+                '0' : common,
                 '1' : uncommon,
                 '2' : rare,
                 '3' : vvrare,
