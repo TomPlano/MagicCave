@@ -1,6 +1,15 @@
 # The Cave of Shards
 
-## What is The Cave of Shards
+---
+
+# Contents
+- 1 - [Introduction](#1-introduction)
+- 2 - [Lore](#2-lore)
+- 3 - [Building](#3-building)
+
+---
+
+## Introduction
 This project aims to take the experience of preparing and running a tabletop
 roleplaying game from an arduous task undertaken by a single individual to a
 more equitable one-shot board game like experience, where no one person is wholly
