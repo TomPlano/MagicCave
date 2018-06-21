@@ -1,5 +1,5 @@
 # The Cave of Shards
-##Lore
+## Lore
 Far out in the Sea of Fallen Stars, beyond the Pirate Isles, a new island has risen.
 Thrust high above the waterline by a violent earthquake, it  was not long before
 it was discovered by the Aglarond, venturing out onto the sea for trade and war.
