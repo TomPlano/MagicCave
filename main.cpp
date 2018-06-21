@@ -37,6 +37,11 @@ int main (int argc, char* argv[])
 
 //loot
   LootFactory lfact;
-  DungeonLoot tuff = lfact.create_loot(player_lvl);
+  DungeonLoot loot_parcel = lfact.create_loot(player_lvl);
+
+  for(int i=0; i<9;i++)
+  {
+    std::cout<< loot_parcel.get_items().at(i).get_name()<<std::endl;
+  }
   return 0;
 }
