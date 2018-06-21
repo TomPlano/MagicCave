@@ -3,9 +3,9 @@
 ---
 
 # Contents
-- 1 - [Introduction](##1-introduction)
-- 2 - [Lore](##2-lore)
-- 3 - [Building](##3-building)
+- 1 - [Introduction](#1-introduction)
+- 2 - [Lore](#2-lore)
+- 3 - [Building](#3-building)
 
 ---
 
