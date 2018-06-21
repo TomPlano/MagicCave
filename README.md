@@ -1,21 +1,5 @@
-# MagicCave
-specs:
--designed to optimism play on a 22x25 game mat or similar
--large map that is C*X by C*Y where X and Y are the edge dimensions of the play surface
-as decided by players, c is some scalar (8 ish)
--large map is chopped to size and presented as different rooms.
-
-This project contains git submodules, specially rapidjson.
-
-To build this project after cloning
-1. git submodule init   //to create submodules
-2. git submodule update //to collect files from sub modules
-if step 2 fails run "git submodule sync" then repeat step 2.
-
-dependencies: cmake
-
-
--Block Text
+# The Cave of Shards
+##Lore
 Far out in the Sea of Fallen Stars, beyond the Pirate Isles, a new island has risen.
 Thrust high above the waterline by a violent earthquake, it  was not long before
 it was discovered by the Aglarond, venturing out onto the sea for trade and war.
@@ -37,3 +21,21 @@ wizards, a commission was established on the island, both to protect the cave
 and to collect a tax on those adventuring parties lucky enough to make it out
 alive. It now stands open to anyone willing the take the challenge of
 The Cave of Shards. Perhaps one day its secrets will be revealed.
+
+specs:
+-designed to optimism play on a 22x25 game mat or similar
+-large map that is C*X by C*Y where X and Y are the edge dimensions of the play surface
+as decided by players, c is some scalar (8 ish)
+-large map is chopped to size and presented as different rooms.
+
+##Building
+
+This project contains git submodules, specially jsoncpp.
+To build this project after cloning
+1. git submodule init   
+2. git submodule update
+3. if step 2 fails run "git submodule sync" then repeat step 2.
+4. make
+
+
+-Block Text
