@@ -3,13 +3,13 @@
 ---
 
 # Contents
-- 1 - [Introduction](#1-introduction)
-- 2 - [Lore](#2-lore)
-- 3 - [Building](#3-building)
+- 1 - [Introduction](##1-introduction)
+- 2 - [Lore](##2-lore)
+- 3 - [Building](##3-building)
 
 ---
 
-## Introduction
+## 1. Introduction
 This project aims to take the experience of preparing and running a tabletop
 roleplaying game from an arduous task undertaken by a single individual to a
 more equitable one-shot board game like experience, where no one person is wholly
@@ -22,7 +22,7 @@ at the beginning of the next play experience. The potential market is any group 
 want to play tabletop dungeon crawlers without having to do a lot of prep work.
 
 
-## Lore
+## 2. Lore
 Far out in the Sea of Fallen Stars, beyond the Pirate Isles, a new island has risen.
 Thrust high above the waterline by a violent earthquake, it  was not long before
 it was discovered by the Aglarond, venturing out onto the sea for trade and war.
@@ -51,7 +51,7 @@ specs:
 as decided by players, c is some scalar (8 ish)
 -large map is chopped to size and presented as different rooms.
 
-## Building
+## 3. Building
 
 This project contains git submodules, specially jsoncpp.
 To build this project after cloning
