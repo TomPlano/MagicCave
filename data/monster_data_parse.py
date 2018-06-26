@@ -14,7 +14,7 @@ count = dict()
 monsters = dict()
 
 for i in data:
-    challenge = str(data[i]["challenge"])
+    challenge = str(data[i]["xp"])
 
     if not challenge.isdigit():
         challenge = float(sum(Fraction(s) for s in challenge.split()))
