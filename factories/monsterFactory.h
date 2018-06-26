@@ -5,6 +5,7 @@
 #include <fstream>
 #include <math.h>
 #include <iostream>
+#include <stdlib.h>
 #include "../jsoncpp/dist/json/json.h"
 
 class MonsterFactory{

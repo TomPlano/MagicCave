@@ -4,17 +4,17 @@
 
 class DungeonMonster{
   public:
-    DungeonMonster(int _challenge,
-                    int xp,
+    DungeonMonster(std::string _challenge,
+                    std::string xp,
                     std::string _alignment,
                     std::string _type,
                     std::string _page,
                     std::string _name,
                     std::string _size);
-    int get_challenge();
-    void set_challenge(int i);
-    int get_xp();
-    void set_xp(int i);
+    std::string get_challenge();
+    void set_challenge(std::string i);
+    std::string get_xp();
+    void set_xp(std::string i);
     std::string get_name();
     void set_name(std::string s);
     std::string get_alignment();
@@ -26,8 +26,8 @@ class DungeonMonster{
     std::string get_size();
     void set_size(std::string s);
   private:
-    int challenge;
-    int xp;
+    std::string challenge;
+    std::string xp;
     std::string name;
     std::string alignment;
     std::string type;

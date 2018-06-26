@@ -1,7 +1,7 @@
 #include "monsterProduct.h"
 
-DungeonMonster::DungeonMonster(int _challenge,
-                int _xp,
+DungeonMonster::DungeonMonster(std::string _challenge,
+                std::string _xp,
                 std::string _alignment,
                 std::string _type,
                 std::string _page,
@@ -16,10 +16,10 @@ page=_page;
 name=_name;
 size=_size;
 }
-int DungeonMonster::get_challenge(){return challenge;}
-void DungeonMonster::set_challenge(int i){challenge=i;}
-int DungeonMonster::get_xp(){return xp;}
-void DungeonMonster::set_xp(int i){xp=i;}
+std::string DungeonMonster::get_challenge(){return challenge;}
+void DungeonMonster::set_challenge(std::string i){challenge=i;}
+std::string DungeonMonster::get_xp(){return xp;}
+void DungeonMonster::set_xp(std::string i){xp=i;}
 std::string DungeonMonster::get_name(){return name;}
 void DungeonMonster::set_name(std::string s){name=s;}
 std::string DungeonMonster::get_alignment(){return alignment;}

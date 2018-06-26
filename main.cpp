@@ -16,17 +16,18 @@
 
 int main (int argc, char* argv[])
 {
-  if(argc!=4)
+  if(argc!=5)
   {
-    printf("useage: Gen.app <xsize> <ysize> <player lvl>\n");
+    printf("useage: Gen.app <xsize> <ysize> <avg player lvl> <player count>\n");
     return 1;
   }
-
-  int player_lvl=atoi(argv[3]);
-
+  int xsize=atoi(argv[1]);
+  int ysize=atoi(argv[2]);
+  int player_lvl=atoi(argv[3]); //cant go past 30, not gonna check now too lazy
+  int player_count=atoi(argv[4]);
 
 //map
-  MapFactory mfact (atoi(argv[1]),atoi(argv[2]));
+  MapFactory mfact (xsize,ysize);
   DungeonMap thingy = mfact.create_map();
   thingy.print_map();
 
@@ -49,10 +50,14 @@ int main (int argc, char* argv[])
 
 //monsters
   MonsterFactory monfact;
-  DungeonMonster monster = monfact.create_monster(1,6);
-  DungeonMonster monster2 = monfact.create_monster(15,6);
-  DungeonMonster monster3 = monfact.create_monster(30,6);
+  DungeonMonster monster = monfact.create_monster(player_lvl,player_count);
 
+  std::cout<<"Name:"<<monster.get_name()<<" xp:"<<monster.get_xp()<<std::endl;
+
+
+//pc
+
+//npc
 
 
   return 0;
