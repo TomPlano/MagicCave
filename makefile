@@ -14,9 +14,15 @@ LFLAGS= -std=c++11
 PROJNAME = Gen.app
 SRCDIRS = factories products
 OBJDIR=objects
-TEMP = main.o mapFactory.o trapFactory.o mapProduct.o tileProduct.o trapProduct.o lootFactory.o lootProduct.o itemFactory.o itemProduct.o  jsoncpp.o
+TEMP = main.o\
+mapFactory.o mapProduct.o tileProduct.o\
+trapFactory.o trapProduct.o\
+lootFactory.o lootProduct.o\
+itemFactory.o itemProduct.o\
+monsterFactory.o monsterProduct.o\
+jsoncpp.o
 OBJS=$(addprefix $(OBJDIR)/,$(TEMP))
-all: jsoncpp $(SRCDIRS) $(PROJNAME) 
+all: jsoncpp $(SRCDIRS) $(PROJNAME)
 
 $(SRCDIRS):
 	$(MAKE) -C $@ DEBUG=$(DEBUG)

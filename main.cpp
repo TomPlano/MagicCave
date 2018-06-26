@@ -6,8 +6,11 @@
 #include "factories/mapFactory.h"
 #include "factories/trapFactory.h"
 #include "factories/lootFactory.h"
+#include "factories/monsterFactory.h"
 
 #include "products/mapProduct.h"
+#include "products/lootProduct.h"
+#include "products/monsterProduct.h"
 
 
 
@@ -44,6 +47,11 @@ int main (int argc, char* argv[])
     std::cout<< loot_parcel.get_items().at(i).get_name()<<std::endl;
   }
 
+//monsters
+  MonsterFactory monfact;
+  DungeonMonster monster = monfact.create_monster(1,6);
+  DungeonMonster monster2 = monfact.create_monster(15,6);
+  DungeonMonster monster3 = monfact.create_monster(30,6);
 
 
 
