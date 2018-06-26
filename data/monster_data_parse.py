@@ -23,6 +23,10 @@ for i in data:
         count[challenge] = 0
         monsters[challenge] = dict()
 
+    if "environment" in data[i]:
+        data[i].pop('environment')
+
+
     monsters[challenge].update({count[challenge] : data[i]})
     count[challenge] += 1
 
