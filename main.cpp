@@ -60,7 +60,7 @@ int main (int argc, char* argv[])
 //pc
   CharacterFactory charfact;
   Character pcs[player_count];
-  for(int i=0; i<player_count-1; i++)
+  for(int i=0; i<player_count; i++)
   {
     pcs[i] =charfact.create_character();
   }

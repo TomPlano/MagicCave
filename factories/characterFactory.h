@@ -5,6 +5,8 @@
 #include "../products/character.h"
 #include "../jsoncpp/dist/json/json.h"
 #include <iostream>
+#include <cmath>
+#include "stdlib.h"
 
 
 class CharacterFactory
@@ -15,9 +17,11 @@ CharacterFactory();
 Character create_character();
 
 private:
+  int stat_gen();
+  std::string* skill_gen(Json::Value classs);
   std::default_random_engine rng;
-  Json::Value class_root;
   Json::Value race_root;
+  Json::Value class_root;
 
 
 };
