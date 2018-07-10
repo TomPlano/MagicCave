@@ -20,6 +20,7 @@ trapFactory.o trapProduct.o\
 lootFactory.o lootProduct.o\
 itemFactory.o itemProduct.o\
 monsterFactory.o monsterProduct.o\
+characterFactory.o character.o\
 jsoncpp.o
 OBJS=$(addprefix $(OBJDIR)/,$(TEMP))
 all: jsoncpp $(SRCDIRS) $(PROJNAME)

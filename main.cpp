@@ -7,10 +7,12 @@
 #include "factories/trapFactory.h"
 #include "factories/lootFactory.h"
 #include "factories/monsterFactory.h"
+#include "factories/characterFactory.h"
 
 #include "products/mapProduct.h"
 #include "products/lootProduct.h"
 #include "products/monsterProduct.h"
+#include "products/character.h"
 
 
 
@@ -56,7 +58,8 @@ int main (int argc, char* argv[])
 
 
 //pc
-
+  CharacterFactory charfact;
+  Character pc =charfact.create_character();
 //npc
 
 
