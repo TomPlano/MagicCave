@@ -57,3 +57,7 @@ results*
 
 #jetbrains nonsense
 .idea/
+CMakeLists.txt
+cmake-build-debug/
+
+

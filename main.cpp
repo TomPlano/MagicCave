@@ -20,16 +20,16 @@ int main (int argc, char* argv[])
 {
   if(argc!=5)
   {
-    printf("useage: Gen.app <xsize> <ysize> <avg player lvl> <player count>\n");
+    printf("useage: Gen.app <x_size> <y_size> <avg player lvl> <player count>\n");
     return 1;
   }
-  int xsize=atoi(argv[1]);
-  int ysize=atoi(argv[2]);
+  int x_size=atoi(argv[1]);
+  int y_size=atoi(argv[2]);
   int player_lvl=atoi(argv[3]); //cant go past 30, not gonna check now too lazy
   int player_count=atoi(argv[4]);
 
 //map
-  MapFactory mfact (xsize,ysize);
+  MapFactory mfact (x_size,y_size);
   DungeonMap thingy = mfact.create_map();
   thingy.print_map();
 
@@ -51,18 +51,18 @@ int main (int argc, char* argv[])
   }
 
 //monsters
-  MonsterFactory monfact;
-  DungeonMonster monster = monfact.create_monster(player_lvl,player_count);
+  MonsterFactory monster_factory;
+  DungeonMonster monster = monster_factory.create_monster(player_lvl,player_count);
 
   std::cout<<"Name:"<<monster.get_name()<<" xp:"<<monster.get_xp()<<std::endl;
 
 
 //pc
-  CharacterFactory charfact;
+  CharacterFactory char_factory;
   Character pcs[player_count];
   for(int i=0; i<player_count; i++)
   {
-    pcs[i] =charfact.create_character();
+    pcs[i] =char_factory.create_character();
     std::cout<<"Character "<<i+1<<" of "<< player_count<<" {"<<std::endl;
     std::cout<<"Race/Class: "<< pcs[i].char_race<<" "<<pcs[i].char_class<<std::endl;
     std::cout<<"First Skill: "<<pcs[i].skills.front()<<std::endl;
@@ -70,11 +70,11 @@ int main (int argc, char* argv[])
 
   }
 //npc
-CharacterFactory npcfact;
+CharacterFactory npc_factory;
 Character npcs[5];
 for(int i=0; i<5; i++)
 {
-  npcs[i] =npcfact.create_character();
+  npcs[i] =npc_factory.create_character();
   std::cout<<"NPC "<<i+1<<" of 5 {"<<std::endl;
   std::cout<<"Race/Class: "<< npcs[i].char_race<<" "<<npcs[i].char_class<<std::endl;
   std::cout<<"First Skill: "<<npcs[i].skills.front()<<std::endl;
