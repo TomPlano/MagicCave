@@ -68,11 +68,23 @@ int main (int argc, char* argv[])
     std::cout<<"First Skill: "<<pcs[i].skills.front()<<std::endl;
     std::cout<<"}"<<std::endl;
 
-
-
   }
 //npc
+CharacterFactory npcfact;
+Character npcs[5];
+for(int i=0; i<5; i++)
+{
+  npcs[i] =npcfact.create_character();
+  std::cout<<"NPC "<<i+1<<" of 5 {"<<std::endl;
+  std::cout<<"Race/Class: "<< npcs[i].char_race<<" "<<npcs[i].char_class<<std::endl;
+  std::cout<<"First Skill: "<<npcs[i].skills.front()<<std::endl;
+  std::cout<<"}"<<std::endl;
+
+}
 
 
+
+
+//placement from sets of stuff
   return 0;
 }

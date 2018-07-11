@@ -54,3 +54,6 @@ dkms.conf
 # submission objs
 *.job
 results*
+
+#jetbrains nonsense
+.idea
