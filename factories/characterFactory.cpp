@@ -11,6 +11,9 @@ CharacterFactory::CharacterFactory()
   cstream >> class_root;
 
 }
+CharacterFactory::~CharacterFactory()
+{
+}
 
 Character CharacterFactory::create_character()
 {
@@ -44,11 +47,7 @@ Character CharacterFactory::create_character()
   ch.intel_mod= std::floor((ch.intel-10)/2);
   ch.wis_mod= std::floor((ch.wis-10)/2);
   ch.cha_mod= std::floor((ch.cha-10)/2);
-
   ch.skills = skill_gen(char_class);
-
-  std::cout<<ch.skills[0]<<std::endl;
-
 
   return ch;
 }
@@ -70,25 +69,28 @@ int CharacterFactory::stat_gen()
     }
     return result;
 }
-std::string* CharacterFactory::skill_gen(Json::Value classs)
+std::list<std::string> CharacterFactory::skill_gen(Json::Value classs)
 {
-  int size = classs["startingProficiencies"]["skills"]["from"].size();
   int choose = classs["startingProficiencies"]["skills"]["choose"].asInt();
 
-  std::string lskills[size];
+  std::vector<std::string> local_skills;
+  std::list<std::string> skill_gen_result;
 
-  for (int i=0;i<size;i++)
-  {
-    lskills[i]=classs["startingProficiencies"]["skills"]["from"][i].asString();
+
+  for (auto itr : classs["startingProficiencies"]["skills"]["from"]) {
+      local_skills.push_back(itr.asString());
   }
-  std::random_shuffle(&lskills[0], &lskills[size+1]);
-
-  std::string* result = (std::string*)malloc(sizeof(std::string)*size);
-
-  for (int i=0;i<choose;i++)
+  std::random_shuffle(local_skills.begin(), local_skills.end());
+  int count=0;
+  for (std::vector<std::string>::iterator it=local_skills.begin(); it!=local_skills.end(); ++it)
   {
-    result[i] = lskills[i];
+    if (count>=choose)
+    {
+      break;
+    }
+    skill_gen_result.push_front(*it);
+    count++;
   }
 
-  return result;
+  return skill_gen_result;
 }

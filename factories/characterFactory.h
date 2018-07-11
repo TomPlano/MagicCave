@@ -7,22 +7,23 @@
 #include <iostream>
 #include <cmath>
 #include "stdlib.h"
+#include <vector>
+#include <list>
 
 
 class CharacterFactory
 {
 public:
 CharacterFactory();
-
+~CharacterFactory();
 Character create_character();
 
 private:
   int stat_gen();
-  std::string* skill_gen(Json::Value classs);
+  std::list<std::string> skill_gen(Json::Value classs);
   std::default_random_engine rng;
   Json::Value race_root;
   Json::Value class_root;
-
 
 };
 #endif

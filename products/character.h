@@ -1,11 +1,13 @@
 #ifndef CHARACTER_PRODUCT
 #define CHARACTER_PRODUCT
 #include <string>
-#include <vector>
+#include <list>
+
 class Character
 {
 public:
 Character();
+~Character();
 std::string char_race;
 std::string char_class;
 int level;
@@ -24,7 +26,7 @@ int cha_mod;
 int prof_bonus;
 int hp;
 std::string hit_die;
-std::string* skills;
+std::list<std::string> skills;
 
 
 };
