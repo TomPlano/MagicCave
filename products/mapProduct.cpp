@@ -12,12 +12,11 @@ DungeonMap::DungeonMap(int _xSize, int _ySize)
       tiles[i] = (Tile*)malloc(ySize*sizeof(Tile));
   }
 }
-DungeonMap::~DungeonMap()
-{
-  for(int i = 0; i < xSize; i++)
-  {
-      free(tiles[i]);
-  }
+DungeonMap::~DungeonMap() {
+    for (int i = 0; i < xSize; i++) {
+        free(tiles[i]);
+    }
+    free(tiles);
 }
 void DungeonMap::print_map()
 {
