@@ -14,7 +14,7 @@ DungeonItem::DungeonItem(std::string _attunement,
   rarity = _rarity;
 
   item_count++;
-  PLACEMENT_ID = "Item "+ std::to_string(item_count);
+  PLACEMENT_ID = "Item"+ std::to_string(item_count);
 }
 
 

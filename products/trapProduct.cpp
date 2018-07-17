@@ -34,7 +34,7 @@ DungeonTrap::DungeonTrap()
   }
 
   trap_count++;
-  PLACEMENT_ID = "Trap "+ std::to_string(trap_count);
+  PLACEMENT_ID = "Trap"+ std::to_string(trap_count);
 
 }
 void DungeonTrap::print_trap()

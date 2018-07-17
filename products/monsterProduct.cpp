@@ -16,7 +16,7 @@ page=_page;
 name=_name;
 size=_size;
     monster_count++;
-    PLACEMENT_ID = "Mon "+ std::to_string(monster_count);
+    PLACEMENT_ID = "Mon"+ std::to_string(monster_count);
 
 }
 std::string DungeonMonster::get_challenge(){return challenge;}

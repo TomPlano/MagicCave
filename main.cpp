@@ -16,6 +16,8 @@
 
 
 
+void popluate(DungeonMap map, DungeonTrap* traps, int num_traps, DungeonLoot* loots, int num_loots, DungeonMonster* monsters, int num_mons, Character* npcs, int num_npcs);
+
 int main (int argc, char* argv[])
 {
   if(argc!=5)
@@ -29,63 +31,75 @@ int main (int argc, char* argv[])
   int player_count=atoi(argv[4]);
 
 
-//map
-  MapFactory mfact (x_size,y_size);
-  DungeonMap thingy = mfact.create_map();
-  thingy.print_map();
-
-//trap
-  TrapFactory tfact;
-  DungeonTrap stuff = tfact.create_trap();
-  stuff.print_trap();
-  DungeonTrap stuff2 = tfact.create_trap();
-  stuff2.print_trap();
+    int num_traps=0;
+    int num_loots=0;
+    int num_mons=0;
+    int num_npcs=0;
 
 
-//loot
-  LootFactory lfact;
-  DungeonLoot loot_parcel = lfact.create_loot(player_lvl);
 
-  for(int i=0; i<10;i++)
-  {
-    std::cout<< loot_parcel.get_items().at(i).get_name()<<std::endl;
-  }
+    //map
+    MapFactory mfact (x_size,y_size);
+    DungeonMap dmap = mfact.create_map();
+    dmap.print_map();
 
-//monsters
-  MonsterFactory monster_factory;
-  DungeonMonster monster = monster_factory.create_monster(player_lvl,player_count);
+    //trap
+    TrapFactory tfact;
+    DungeonTrap traps[num_traps];
+    for(int i=0; i<num_traps;i++)
+    {
+        traps[i]=tfact.create_trap();
+    }
 
-  std::cout<<"Name:"<<monster.get_name()<<" xp:"<<monster.get_xp()<<std::endl;
+    //loot
+    LootFactory lfact;
+    DungeonLoot loots[num_loots];
+    for(int i=0; i<num_loots;i++)
+    {
+        loots[i]=lfact.create_loot(player_lvl);
+    }
 
+    //monsters
+    MonsterFactory monster_factory;
+    DungeonMonster monsters[num_mons];
+    for(int i=0; i<num_mons; i++)
+    {
+        monsters[i] = monster_factory.create_monster(player_lvl, player_count);
+    }
+
+    //npc
+    CharacterFactory npc_factory;
+    Character npcs[num_npcs];
+    for(int i=0; i<num_npcs; i++)
+    {
+        npcs[i] =npc_factory.create_character(true);
+    }
 
 //pc
-  CharacterFactory char_factory;
-  Character pcs[player_count];
-  for(int i=0; i<player_count; i++)
-  {
-    pcs[i] =char_factory.create_character(false);
-    std::cout<<"Character "<<i+1<<" of "<< player_count<<" {"<<std::endl;
-    std::cout<<"Race/Class: "<< pcs[i].char_race<<" "<<pcs[i].char_class<<std::endl;
-    std::cout<<"First Skill: "<<pcs[i].skills.front()<<std::endl;
-    std::cout<<"}"<<std::endl;
+    CharacterFactory char_factory;
+    Character pcs[player_count];
+    for(int i=0; i<player_count; i++) {
+      pcs[i] = char_factory.create_character(false);
+      std::cout << "Character " << i + 1 << " of " << player_count << " {" << std::endl;
+      std::cout << "Race/Class: " << pcs[i].char_race << " " << pcs[i].char_class << std::endl;
+      std::cout << "First Skill: " << pcs[i].skills.front() << std::endl;
+      std::cout << "}" << std::endl;
+    }
 
-  }
-//npc
-CharacterFactory npc_factory;
-Character npcs[5];
-for(int i=0; i<5; i++)
-{
-  npcs[i] =npc_factory.create_character(true);
-  std::cout<<"NPC "<<i+1<<" of 5 {"<<std::endl;
-  std::cout<<"Race/Class: "<< npcs[i].char_race<<" "<<npcs[i].char_class<<std::endl;
-  std::cout<<"First Skill: "<<npcs[i].PLACEMENT_ID<<std::endl;
-  std::cout<<"}"<<std::endl;
+//placement from sets of stuf
+popluate(dmap, traps, num_traps, loots, num_loots,  monsters, num_mons,  npcs, num_npcs);
 
+
+
+
+
+
+
+  return 0;
 }
 
 
+void popluate(DungeonMap map, DungeonTrap* traps, int num_traps, DungeonLoot* loots, int num_loots, DungeonMonster* monsters, int num_mons, Character* npcs, int num_npcs)
+{
 
-
-//placement from sets of stuff
-  return 0;
 }
