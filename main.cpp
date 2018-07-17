@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <iostream>
 #include <random>
+#include <time.h>
+
 #include "factories/mapFactory.h"
 #include "factories/trapFactory.h"
 #include "factories/lootFactory.h"
@@ -17,6 +19,7 @@
 
 
 int popluate(DungeonMap* map, DungeonTrap* traps, int num_traps, DungeonLoot* loots, int num_loots, DungeonMonster* monsters, int num_mons, Character* npcs, int num_npcs);
+int inc_offset(int offset);
 
 int main (int argc, char* argv[])
 {
@@ -31,7 +34,7 @@ int main (int argc, char* argv[])
   int player_count=atoi(argv[4]);
 
 
-    int num_traps=0;
+    int num_traps=5;
     int num_loots=0;
     int num_mons=0;
     int num_npcs=0;
@@ -41,7 +44,6 @@ int main (int argc, char* argv[])
     //map
     MapFactory mfact (x_size,y_size);
     DungeonMap dmap = mfact.create_map();
-    dmap.print_map();
 
     //trap
 
@@ -94,11 +96,51 @@ int main (int argc, char* argv[])
 //placement from sets of stuf
 popluate(&dmap, traps, num_traps, loots, num_loots,  monsters, num_mons,  npcs, num_npcs);
 
+    dmap.print_map();
   return 0;
 }
 
 
 int popluate(DungeonMap* map, DungeonTrap* traps, int num_traps, DungeonLoot* loots, int num_loots, DungeonMonster* monsters, int num_mons, Character* npcs, int num_npcs)
 {
+    std::default_random_engine rng;
+
+    std::uniform_int_distribution<int> xplace(0,map->xSize);
+    std::uniform_int_distribution<int> yplace(0,map->ySize);
+
+    int id_offset = 33;
+    
+    for(int x = 0; x < num_traps; x ++){
+        char temp = id_offset;
+        std::string char_rep = std::to_string(temp);
+        traps[x].PLACEMENT_ID = char_rep;   
+        id_offset = inc_offset(id_offset); 
+std::cout<<char_rep<<std::endl;
+        bool invalid = true;
+        int xPlace;
+        int yPlace;
+        while(invalid){
+            xPlace = xplace(rng);
+            yPlace = yplace(rng);
+            if(map->tiles[xPlace][yPlace].type == 1){
+                invalid = false;
+                map->tiles[xPlace][yPlace].PLACEMENT_ID = char_rep;
+            }
+        }
+    }
+
+
+
+
+
+
     return 0;
+}
+
+int inc_offset(int offset){
+    offset++;
+    if(offset==35||offset==46){
+        offset++;
+    }
+    return offset;
 }
