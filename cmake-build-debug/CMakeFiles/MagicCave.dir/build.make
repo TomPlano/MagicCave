@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/tom/Apps/clion-2018.1.6/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = /home/tom/Apps/clion-2018.1.6/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave
+CMAKE_SOURCE_DIR = /home/tom/Documents/MagicCave
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug
+CMAKE_BINARY_DIR = /home/tom/Documents/MagicCave/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MagicCave.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/MagicCave.dir/flags.make
 
 CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.o: CMakeFiles/MagicCave.dir/flags.make
 CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.o: ../factories/characterFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.o -c /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/characterFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.o -c /home/tom/Documents/MagicCave/factories/characterFactory.cpp
 
 CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/characterFactory.cpp > CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/MagicCave/factories/characterFactory.cpp > CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.i
 
 CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/characterFactory.cpp -o CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/MagicCave/factories/characterFactory.cpp -o CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.s
 
 CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.o.provides.build: CMakeF
 
 CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.o: CMakeFiles/MagicCave.dir/flags.make
 CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.o: ../factories/itemFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.o -c /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/itemFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.o -c /home/tom/Documents/MagicCave/factories/itemFactory.cpp
 
 CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/itemFactory.cpp > CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/MagicCave/factories/itemFactory.cpp > CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.i
 
 CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/itemFactory.cpp -o CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/MagicCave/factories/itemFactory.cpp -o CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.s
 
 CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.o: CMakeFiles/MagicCave.dir/flags.make
 CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.o: ../factories/lootFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.o -c /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/lootFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.o -c /home/tom/Documents/MagicCave/factories/lootFactory.cpp
 
 CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/lootFactory.cpp > CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/MagicCave/factories/lootFactory.cpp > CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.i
 
 CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/lootFactory.cpp -o CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/MagicCave/factories/lootFactory.cpp -o CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.s
 
 CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.o: CMakeFiles/MagicCave.dir/flags.make
 CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.o: ../factories/mapFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.o -c /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/mapFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.o -c /home/tom/Documents/MagicCave/factories/mapFactory.cpp
 
 CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/mapFactory.cpp > CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/MagicCave/factories/mapFactory.cpp > CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.i
 
 CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/mapFactory.cpp -o CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/MagicCave/factories/mapFactory.cpp -o CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.s
 
 CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.o.provides.build: CMakeFiles/M
 
 CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.o: CMakeFiles/MagicCave.dir/flags.make
 CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.o: ../factories/monsterFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.o -c /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/monsterFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.o -c /home/tom/Documents/MagicCave/factories/monsterFactory.cpp
 
 CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/monsterFactory.cpp > CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/MagicCave/factories/monsterFactory.cpp > CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.i
 
 CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/monsterFactory.cpp -o CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/MagicCave/factories/monsterFactory.cpp -o CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.s
 
 CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.o: CMakeFiles/MagicCave.dir/flags.make
 CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.o: ../factories/trapFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.o -c /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/trapFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.o -c /home/tom/Documents/MagicCave/factories/trapFactory.cpp
 
 CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/trapFactory.cpp > CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/MagicCave/factories/trapFactory.cpp > CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.i
 
 CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/trapFactory.cpp -o CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/MagicCave/factories/trapFactory.cpp -o CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.s
 
 CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.o: CMakeFiles/MagicCave.dir/flags.make
 CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.o: ../jsoncpp/dist/jsoncpp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.o -c /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/jsoncpp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.o -c /home/tom/Documents/MagicCave/jsoncpp/dist/jsoncpp.cpp
 
 CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/jsoncpp.cpp > CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/MagicCave/jsoncpp/dist/jsoncpp.cpp > CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.i
 
 CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/jsoncpp.cpp -o CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/MagicCave/jsoncpp/dist/jsoncpp.cpp -o CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.s
 
 CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.o.provides.build: CMakeFiles/M
 
 CMakeFiles/MagicCave.dir/products/character.cpp.o: CMakeFiles/MagicCave.dir/flags.make
 CMakeFiles/MagicCave.dir/products/character.cpp.o: ../products/character.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MagicCave.dir/products/character.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/products/character.cpp.o -c /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/character.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MagicCave.dir/products/character.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/products/character.cpp.o -c /home/tom/Documents/MagicCave/products/character.cpp
 
 CMakeFiles/MagicCave.dir/products/character.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MagicCave.dir/products/character.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/character.cpp > CMakeFiles/MagicCave.dir/products/character.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/MagicCave/products/character.cpp > CMakeFiles/MagicCave.dir/products/character.cpp.i
 
 CMakeFiles/MagicCave.dir/products/character.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MagicCave.dir/products/character.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/character.cpp -o CMakeFiles/MagicCave.dir/products/character.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/MagicCave/products/character.cpp -o CMakeFiles/MagicCave.dir/products/character.cpp.s
 
 CMakeFiles/MagicCave.dir/products/character.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/MagicCave.dir/products/character.cpp.o.provides.build: CMakeFiles/Mag
 
 CMakeFiles/MagicCave.dir/products/itemProduct.cpp.o: CMakeFiles/MagicCave.dir/flags.make
 CMakeFiles/MagicCave.dir/products/itemProduct.cpp.o: ../products/itemProduct.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MagicCave.dir/products/itemProduct.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/products/itemProduct.cpp.o -c /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/itemProduct.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MagicCave.dir/products/itemProduct.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/products/itemProduct.cpp.o -c /home/tom/Documents/MagicCave/products/itemProduct.cpp
 
 CMakeFiles/MagicCave.dir/products/itemProduct.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MagicCave.dir/products/itemProduct.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/itemProduct.cpp > CMakeFiles/MagicCave.dir/products/itemProduct.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/MagicCave/products/itemProduct.cpp > CMakeFiles/MagicCave.dir/products/itemProduct.cpp.i
 
 CMakeFiles/MagicCave.dir/products/itemProduct.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MagicCave.dir/products/itemProduct.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/itemProduct.cpp -o CMakeFiles/MagicCave.dir/products/itemProduct.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/MagicCave/products/itemProduct.cpp -o CMakeFiles/MagicCave.dir/products/itemProduct.cpp.s
 
 CMakeFiles/MagicCave.dir/products/itemProduct.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/MagicCave.dir/products/itemProduct.cpp.o.provides.build: CMakeFiles/M
 
 CMakeFiles/MagicCave.dir/products/lootProduct.cpp.o: CMakeFiles/MagicCave.dir/flags.make
 CMakeFiles/MagicCave.dir/products/lootProduct.cpp.o: ../products/lootProduct.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MagicCave.dir/products/lootProduct.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/products/lootProduct.cpp.o -c /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/lootProduct.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MagicCave.dir/products/lootProduct.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/products/lootProduct.cpp.o -c /home/tom/Documents/MagicCave/products/lootProduct.cpp
 
 CMakeFiles/MagicCave.dir/products/lootProduct.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MagicCave.dir/products/lootProduct.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/lootProduct.cpp > CMakeFiles/MagicCave.dir/products/lootProduct.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/MagicCave/products/lootProduct.cpp > CMakeFiles/MagicCave.dir/products/lootProduct.cpp.i
 
 CMakeFiles/MagicCave.dir/products/lootProduct.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MagicCave.dir/products/lootProduct.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/lootProduct.cpp -o CMakeFiles/MagicCave.dir/products/lootProduct.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/MagicCave/products/lootProduct.cpp -o CMakeFiles/MagicCave.dir/products/lootProduct.cpp.s
 
 CMakeFiles/MagicCave.dir/products/lootProduct.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/MagicCave.dir/products/lootProduct.cpp.o.provides.build: CMakeFiles/M
 
 CMakeFiles/MagicCave.dir/products/mapProduct.cpp.o: CMakeFiles/MagicCave.dir/flags.make
 CMakeFiles/MagicCave.dir/products/mapProduct.cpp.o: ../products/mapProduct.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MagicCave.dir/products/mapProduct.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/products/mapProduct.cpp.o -c /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/mapProduct.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MagicCave.dir/products/mapProduct.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/products/mapProduct.cpp.o -c /home/tom/Documents/MagicCave/products/mapProduct.cpp
 
 CMakeFiles/MagicCave.dir/products/mapProduct.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MagicCave.dir/products/mapProduct.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/mapProduct.cpp > CMakeFiles/MagicCave.dir/products/mapProduct.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/MagicCave/products/mapProduct.cpp > CMakeFiles/MagicCave.dir/products/mapProduct.cpp.i
 
 CMakeFiles/MagicCave.dir/products/mapProduct.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MagicCave.dir/products/mapProduct.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/mapProduct.cpp -o CMakeFiles/MagicCave.dir/products/mapProduct.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/MagicCave/products/mapProduct.cpp -o CMakeFiles/MagicCave.dir/products/mapProduct.cpp.s
 
 CMakeFiles/MagicCave.dir/products/mapProduct.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/MagicCave.dir/products/mapProduct.cpp.o.provides.build: CMakeFiles/Ma
 
 CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.o: CMakeFiles/MagicCave.dir/flags.make
 CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.o: ../products/monsterProduct.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.o -c /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/monsterProduct.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.o -c /home/tom/Documents/MagicCave/products/monsterProduct.cpp
 
 CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/monsterProduct.cpp > CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/MagicCave/products/monsterProduct.cpp > CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.i
 
 CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/monsterProduct.cpp -o CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/MagicCave/products/monsterProduct.cpp -o CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.s
 
 CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/MagicCave.dir/products/tileProduct.cpp.o: CMakeFiles/MagicCave.dir/flags.make
 CMakeFiles/MagicCave.dir/products/tileProduct.cpp.o: ../products/tileProduct.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/MagicCave.dir/products/tileProduct.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/products/tileProduct.cpp.o -c /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/tileProduct.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/MagicCave.dir/products/tileProduct.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/products/tileProduct.cpp.o -c /home/tom/Documents/MagicCave/products/tileProduct.cpp
 
 CMakeFiles/MagicCave.dir/products/tileProduct.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MagicCave.dir/products/tileProduct.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/tileProduct.cpp > CMakeFiles/MagicCave.dir/products/tileProduct.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/MagicCave/products/tileProduct.cpp > CMakeFiles/MagicCave.dir/products/tileProduct.cpp.i
 
 CMakeFiles/MagicCave.dir/products/tileProduct.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MagicCave.dir/products/tileProduct.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/tileProduct.cpp -o CMakeFiles/MagicCave.dir/products/tileProduct.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/MagicCave/products/tileProduct.cpp -o CMakeFiles/MagicCave.dir/products/tileProduct.cpp.s
 
 CMakeFiles/MagicCave.dir/products/tileProduct.cpp.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/MagicCave.dir/products/tileProduct.cpp.o.provides.build: CMakeFiles/M
 
 CMakeFiles/MagicCave.dir/products/trapProduct.cpp.o: CMakeFiles/MagicCave.dir/flags.make
 CMakeFiles/MagicCave.dir/products/trapProduct.cpp.o: ../products/trapProduct.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MagicCave.dir/products/trapProduct.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/products/trapProduct.cpp.o -c /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/trapProduct.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MagicCave.dir/products/trapProduct.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/products/trapProduct.cpp.o -c /home/tom/Documents/MagicCave/products/trapProduct.cpp
 
 CMakeFiles/MagicCave.dir/products/trapProduct.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MagicCave.dir/products/trapProduct.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/trapProduct.cpp > CMakeFiles/MagicCave.dir/products/trapProduct.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/MagicCave/products/trapProduct.cpp > CMakeFiles/MagicCave.dir/products/trapProduct.cpp.i
 
 CMakeFiles/MagicCave.dir/products/trapProduct.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MagicCave.dir/products/trapProduct.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/trapProduct.cpp -o CMakeFiles/MagicCave.dir/products/trapProduct.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/MagicCave/products/trapProduct.cpp -o CMakeFiles/MagicCave.dir/products/trapProduct.cpp.s
 
 CMakeFiles/MagicCave.dir/products/trapProduct.cpp.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/MagicCave.dir/products/trapProduct.cpp.o.provides.build: CMakeFiles/M
 
 CMakeFiles/MagicCave.dir/main.cpp.o: CMakeFiles/MagicCave.dir/flags.make
 CMakeFiles/MagicCave.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MagicCave.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/main.cpp.o -c /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MagicCave.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MagicCave.dir/main.cpp.o -c /home/tom/Documents/MagicCave/main.cpp
 
 CMakeFiles/MagicCave.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MagicCave.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/main.cpp > CMakeFiles/MagicCave.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/Documents/MagicCave/main.cpp > CMakeFiles/MagicCave.dir/main.cpp.i
 
 CMakeFiles/MagicCave.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MagicCave.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/main.cpp -o CMakeFiles/MagicCave.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/Documents/MagicCave/main.cpp -o CMakeFiles/MagicCave.dir/main.cpp.s
 
 CMakeFiles/MagicCave.dir/main.cpp.o.requires:
 
@@ -455,7 +455,7 @@ MagicCave: CMakeFiles/MagicCave.dir/products/trapProduct.cpp.o
 MagicCave: CMakeFiles/MagicCave.dir/main.cpp.o
 MagicCave: CMakeFiles/MagicCave.dir/build.make
 MagicCave: CMakeFiles/MagicCave.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable MagicCave"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable MagicCave"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MagicCave.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -486,6 +486,6 @@ CMakeFiles/MagicCave.dir/clean:
 .PHONY : CMakeFiles/MagicCave.dir/clean
 
 CMakeFiles/MagicCave.dir/depend:
-	cd /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles/MagicCave.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tom/Documents/MagicCave/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tom/Documents/MagicCave /home/tom/Documents/MagicCave /home/tom/Documents/MagicCave/cmake-build-debug /home/tom/Documents/MagicCave/cmake-build-debug /home/tom/Documents/MagicCave/cmake-build-debug/CMakeFiles/MagicCave.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MagicCave.dir/depend
 

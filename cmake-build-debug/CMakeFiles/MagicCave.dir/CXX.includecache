@@ -94,25 +94,25 @@ clocale
 
 ../jsoncpp/src/lib_json/json_valueiterator.inl
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/characterFactory.cpp
+/home/tom/Documents/MagicCave/factories/characterFactory.cpp
 characterFactory.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/characterFactory.h
+/home/tom/Documents/MagicCave/factories/characterFactory.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/characterFactory.h
+/home/tom/Documents/MagicCave/factories/characterFactory.h
 random
 -
 fstream
 -
 ../products/character.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/character.h
+/home/tom/Documents/MagicCave/products/character.h
 ../jsoncpp/dist/json/json.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/json.h
+/home/tom/Documents/MagicCave/jsoncpp/dist/json/json.h
 iostream
 -
 cmath
 -
 stdlib.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/stdlib.h
+/home/tom/Documents/MagicCave/factories/stdlib.h
 vector
 -
 list
@@ -120,13 +120,13 @@ list
 algorithm
 -
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/itemFactory.cpp
+/home/tom/Documents/MagicCave/factories/itemFactory.cpp
 itemFactory.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/itemFactory.h
+/home/tom/Documents/MagicCave/factories/itemFactory.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/itemFactory.h
+/home/tom/Documents/MagicCave/factories/itemFactory.h
 ../products/itemProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/itemProduct.h
+/home/tom/Documents/MagicCave/products/itemProduct.h
 iostream
 -
 string
@@ -142,19 +142,19 @@ stdlib.h
 fstream
 -
 ../jsoncpp/dist/json/json.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/json.h
+/home/tom/Documents/MagicCave/jsoncpp/dist/json/json.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/lootFactory.cpp
+/home/tom/Documents/MagicCave/factories/lootFactory.cpp
 lootFactory.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/lootFactory.h
+/home/tom/Documents/MagicCave/factories/lootFactory.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/lootFactory.h
+/home/tom/Documents/MagicCave/factories/lootFactory.h
 ../products/lootProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/lootProduct.h
+/home/tom/Documents/MagicCave/products/lootProduct.h
 itemFactory.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/itemFactory.h
+/home/tom/Documents/MagicCave/factories/itemFactory.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/mapFactory.cpp
+/home/tom/Documents/MagicCave/factories/mapFactory.cpp
 stdio.h
 -
 stdlib.h
@@ -168,23 +168,23 @@ iostream
 random
 -
 mapFactory.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/mapFactory.h
+/home/tom/Documents/MagicCave/factories/mapFactory.h
 ../products/mapProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/mapProduct.h
+/home/tom/Documents/MagicCave/products/mapProduct.h
 ../products/tileProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/tileProduct.h
+/home/tom/Documents/MagicCave/products/tileProduct.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/mapFactory.h
+/home/tom/Documents/MagicCave/factories/mapFactory.h
 ../products/mapProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/mapProduct.h
+/home/tom/Documents/MagicCave/products/mapProduct.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/monsterFactory.cpp
+/home/tom/Documents/MagicCave/factories/monsterFactory.cpp
 monsterFactory.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/monsterFactory.h
+/home/tom/Documents/MagicCave/factories/monsterFactory.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/monsterFactory.h
+/home/tom/Documents/MagicCave/factories/monsterFactory.h
 ../products/monsterProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/monsterProduct.h
+/home/tom/Documents/MagicCave/products/monsterProduct.h
 random
 -
 fstream
@@ -196,17 +196,17 @@ iostream
 stdlib.h
 -
 ../jsoncpp/dist/json/json.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/json.h
+/home/tom/Documents/MagicCave/jsoncpp/dist/json/json.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/trapFactory.cpp
+/home/tom/Documents/MagicCave/factories/trapFactory.cpp
 trapFactory.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/trapFactory.h
+/home/tom/Documents/MagicCave/factories/trapFactory.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/trapFactory.h
+/home/tom/Documents/MagicCave/factories/trapFactory.h
 ../products/trapProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/trapProduct.h
+/home/tom/Documents/MagicCave/products/trapProduct.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/json.h
+/home/tom/Documents/MagicCave/jsoncpp/dist/json/json.h
 stddef.h
 -
 stdint.h
@@ -216,15 +216,15 @@ string
 cpptl/config.h
 -
 version.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/version.h
+/home/tom/Documents/MagicCave/jsoncpp/dist/json/version.h
 allocator.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/allocator.h
+/home/tom/Documents/MagicCave/jsoncpp/dist/json/allocator.h
 config.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/config.h
+/home/tom/Documents/MagicCave/jsoncpp/dist/json/config.h
 forwards.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/forwards.h
+/home/tom/Documents/MagicCave/jsoncpp/dist/json/forwards.h
 forwards.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/forwards.h
+/home/tom/Documents/MagicCave/jsoncpp/dist/json/forwards.h
 exception
 -
 string
@@ -238,9 +238,9 @@ cpptl/smallmap.h
 cpptl/forwards.h
 -
 features.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/features.h
+/home/tom/Documents/MagicCave/jsoncpp/dist/json/features.h
 value.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/value.h
+/home/tom/Documents/MagicCave/jsoncpp/dist/json/value.h
 deque
 -
 iosfwd
@@ -252,7 +252,7 @@ stack
 string
 -
 value.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/value.h
+/home/tom/Documents/MagicCave/jsoncpp/dist/json/value.h
 ostream
 -
 string
@@ -264,17 +264,17 @@ sstream
 stdlib.h
 -
 config.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/config.h
+/home/tom/Documents/MagicCave/jsoncpp/dist/json/config.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/jsoncpp.cpp
+/home/tom/Documents/MagicCave/jsoncpp/dist/jsoncpp.cpp
 json/json.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/json.h
+/home/tom/Documents/MagicCave/jsoncpp/dist/json/json.h
 json/config.h
 -
 clocale
 -
 json_tool.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json_tool.h
+/home/tom/Documents/MagicCave/jsoncpp/dist/json_tool.h
 json/assertions.h
 -
 json/reader.h
@@ -324,9 +324,9 @@ algorithm
 cstddef
 -
 json_valueiterator.inl
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json_valueiterator.inl
+/home/tom/Documents/MagicCave/jsoncpp/dist/json_valueiterator.inl
 json_tool.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json_tool.h
+/home/tom/Documents/MagicCave/jsoncpp/dist/json_tool.h
 json/writer.h
 -
 cassert
@@ -358,7 +358,7 @@ float.h
 ieeefp.h
 -
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/main.cpp
+/home/tom/Documents/MagicCave/main.cpp
 stdlib.h
 -
 stdio.h
@@ -368,91 +368,91 @@ iostream
 random
 -
 factories/mapFactory.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/mapFactory.h
+/home/tom/Documents/MagicCave/factories/mapFactory.h
 factories/trapFactory.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/trapFactory.h
+/home/tom/Documents/MagicCave/factories/trapFactory.h
 factories/lootFactory.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/lootFactory.h
+/home/tom/Documents/MagicCave/factories/lootFactory.h
 factories/monsterFactory.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/monsterFactory.h
+/home/tom/Documents/MagicCave/factories/monsterFactory.h
 factories/characterFactory.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/characterFactory.h
+/home/tom/Documents/MagicCave/factories/characterFactory.h
 products/mapProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/mapProduct.h
+/home/tom/Documents/MagicCave/products/mapProduct.h
 products/lootProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/lootProduct.h
+/home/tom/Documents/MagicCave/products/lootProduct.h
 products/monsterProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/monsterProduct.h
+/home/tom/Documents/MagicCave/products/monsterProduct.h
 products/character.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/character.h
+/home/tom/Documents/MagicCave/products/character.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/character.cpp
+/home/tom/Documents/MagicCave/products/character.cpp
 character.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/character.h
+/home/tom/Documents/MagicCave/products/character.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/character.h
+/home/tom/Documents/MagicCave/products/character.h
 string
 -
 list
 -
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/itemProduct.cpp
+/home/tom/Documents/MagicCave/products/itemProduct.cpp
 itemProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/itemProduct.h
+/home/tom/Documents/MagicCave/products/itemProduct.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/itemProduct.h
+/home/tom/Documents/MagicCave/products/itemProduct.h
 string
 -
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/lootProduct.cpp
+/home/tom/Documents/MagicCave/products/lootProduct.cpp
 lootProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/lootProduct.h
+/home/tom/Documents/MagicCave/products/lootProduct.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/lootProduct.h
+/home/tom/Documents/MagicCave/products/lootProduct.h
 string
 -
 itemProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/itemProduct.h
+/home/tom/Documents/MagicCave/products/itemProduct.h
 vector
 -
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/mapProduct.cpp
+/home/tom/Documents/MagicCave/products/mapProduct.cpp
 mapProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/mapProduct.h
+/home/tom/Documents/MagicCave/products/mapProduct.h
 stdio.h
 -
 stdlib.h
 -
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/mapProduct.h
+/home/tom/Documents/MagicCave/products/mapProduct.h
 tileProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/tileProduct.h
+/home/tom/Documents/MagicCave/products/tileProduct.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/monsterProduct.cpp
+/home/tom/Documents/MagicCave/products/monsterProduct.cpp
 monsterProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/monsterProduct.h
+/home/tom/Documents/MagicCave/products/monsterProduct.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/monsterProduct.h
+/home/tom/Documents/MagicCave/products/monsterProduct.h
 string
 -
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/tileProduct.cpp
+/home/tom/Documents/MagicCave/products/tileProduct.cpp
 tileProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/tileProduct.h
+/home/tom/Documents/MagicCave/products/tileProduct.h
 stdio.h
 -
 stdlib.h
 -
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/tileProduct.h
+/home/tom/Documents/MagicCave/products/tileProduct.h
 string
 -
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/trapProduct.cpp
+/home/tom/Documents/MagicCave/products/trapProduct.cpp
 trapProduct.h
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/trapProduct.h
+/home/tom/Documents/MagicCave/products/trapProduct.h
 
-/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/trapProduct.h
+/home/tom/Documents/MagicCave/products/trapProduct.h
 random
 -
 stdio.h
