@@ -17,7 +17,6 @@ class Tile
 {
   public:
     Tile(bool _type);
-    ~Tile();
     void print_tile();
   private:
     tile_type type;
