@@ -1,4 +1,5 @@
 #include "trapProduct.h"
+int DungeonTrap::trap_count=0;
 
 //public
 DungeonTrap::DungeonTrap()
@@ -31,6 +32,9 @@ DungeonTrap::DungeonTrap()
      default:
       break;
   }
+
+  trap_count++;
+  PLACEMENT_ID = "Trap "+ std::to_string(trap_count);
 
 }
 void DungeonTrap::print_trap()
