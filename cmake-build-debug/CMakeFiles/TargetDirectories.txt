@@ -1,0 +1,3 @@
+/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/cmake-build-debug/CMakeFiles/MagicCave.dir

@@ -47,8 +47,7 @@ DungeonMap MapFactory::create_map(int itterations)
   {
     for(int j = 0; j < ySize; j++)
     {
-      //dungeon_map.tiles[i][j] = Tile (cellFill[i][j]);
-        dungeon_map.tiles[i][j] = cellFill[i][j];
+      dungeon_map.tiles[i][j] = Tile (cellFill[i][j]);
     }
   }
 
