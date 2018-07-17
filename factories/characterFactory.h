@@ -9,6 +9,7 @@
 #include "stdlib.h"
 #include <vector>
 #include <list>
+#include <algorithm>
 
 
 class CharacterFactory
