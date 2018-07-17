@@ -15,7 +15,7 @@ CharacterFactory::~CharacterFactory()
 {
 }
 
-Character CharacterFactory::create_character()
+Character CharacterFactory::create_character(bool is_npc)
 {
   int num_races = race_root["race"].size()-1;
   std::uniform_int_distribution<int> race_select(0,num_races);
@@ -27,7 +27,7 @@ Character CharacterFactory::create_character()
   Json::Value char_class = class_root["class"][class_select(rng)];
 
 
-  Character ch;
+  Character ch (is_npc);
   ch.level=1;
   ch.prof_bonus = std::ceil(ch.level/4)+1;
   ch.char_race = char_race["name"].asString();

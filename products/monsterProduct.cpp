@@ -1,5 +1,5 @@
 #include "monsterProduct.h"
-
+int DungeonMonster::monster_count=0;
 DungeonMonster::DungeonMonster(std::string _challenge,
                 std::string _xp,
                 std::string _alignment,
@@ -15,6 +15,9 @@ type=_type;
 page=_page;
 name=_name;
 size=_size;
+    monster_count++;
+    PLACEMENT_ID = "Mon "+ std::to_string(monster_count);
+
 }
 std::string DungeonMonster::get_challenge(){return challenge;}
 void DungeonMonster::set_challenge(std::string i){challenge=i;}

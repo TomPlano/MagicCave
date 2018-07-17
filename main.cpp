@@ -28,6 +28,7 @@ int main (int argc, char* argv[])
   int player_lvl=atoi(argv[3]); //cant go past 30, not gonna check now too lazy
   int player_count=atoi(argv[4]);
 
+
 //map
   MapFactory mfact (x_size,y_size);
   DungeonMap thingy = mfact.create_map();
@@ -62,7 +63,7 @@ int main (int argc, char* argv[])
   Character pcs[player_count];
   for(int i=0; i<player_count; i++)
   {
-    pcs[i] =char_factory.create_character();
+    pcs[i] =char_factory.create_character(false);
     std::cout<<"Character "<<i+1<<" of "<< player_count<<" {"<<std::endl;
     std::cout<<"Race/Class: "<< pcs[i].char_race<<" "<<pcs[i].char_class<<std::endl;
     std::cout<<"First Skill: "<<pcs[i].skills.front()<<std::endl;
@@ -74,10 +75,10 @@ CharacterFactory npc_factory;
 Character npcs[5];
 for(int i=0; i<5; i++)
 {
-  npcs[i] =npc_factory.create_character();
+  npcs[i] =npc_factory.create_character(true);
   std::cout<<"NPC "<<i+1<<" of 5 {"<<std::endl;
   std::cout<<"Race/Class: "<< npcs[i].char_race<<" "<<npcs[i].char_class<<std::endl;
-  std::cout<<"First Skill: "<<npcs[i].skills.front()<<std::endl;
+  std::cout<<"First Skill: "<<npcs[i].PLACEMENT_ID<<std::endl;
   std::cout<<"}"<<std::endl;
 
 }

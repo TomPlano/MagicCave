@@ -1,6 +1,8 @@
 #ifndef TILE_PRODUCT
 #define TILE_PRODUCT
 
+#include <string>
+
 enum tile_type{
   Wall,
   Floor
@@ -20,6 +22,8 @@ class Tile
   private:
     tile_type type;
     modifiers mods;
+    std::string item_id;
+
 };
 
 #endif

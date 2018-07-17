@@ -1,4 +1,12 @@
 #include "lootProduct.h"
+
+int DungeonLoot::loot_count=0;
+DungeonLoot::DungeonLoot(){
+  loot_count++;
+  PLACEMENT_ID = "Loot "+ std::to_string(loot_count);
+}
+
+
 std::vector<DungeonItem> DungeonLoot::get_items()
 {
   return items;

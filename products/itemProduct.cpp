@@ -1,6 +1,6 @@
 #include "itemProduct.h"
 
-
+int DungeonItem::item_count = 0;
 DungeonItem::DungeonItem(std::string _attunement,
                           std::string _type,
                           std::string _page,
@@ -12,6 +12,9 @@ DungeonItem::DungeonItem(std::string _attunement,
   page = _page;
   name = _name;
   rarity = _rarity;
+
+  item_count++;
+  PLACEMENT_ID = "Item "+ std::to_string(item_count);
 }
 
 

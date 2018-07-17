@@ -16,7 +16,7 @@ class CharacterFactory
 public:
 CharacterFactory();
 ~CharacterFactory();
-Character create_character();
+Character create_character(bool is_npc);
 
 private:
   int stat_gen();

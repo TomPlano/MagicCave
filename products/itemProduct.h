@@ -25,9 +25,9 @@ class DungeonItem
     void set_name(std::string s);
     std::string get_rarity();
     void set_rarity(std::string s);
-
-
-  private:
+    static int item_count;
+    std::string PLACEMENT_ID;
+private:
     int value;
     std::string blocktext;
     std::string attunement;

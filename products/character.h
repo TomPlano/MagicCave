@@ -6,8 +6,11 @@
 class Character
 {
 public:
-Character();
+    Character();
+    Character(bool is_npc);
+
 ~Character();
+static int npc_count;
 std::string char_race;
 std::string char_class;
 int level;
@@ -25,6 +28,8 @@ int wis_mod;
 int cha_mod;
 int prof_bonus;
 int hp;
+std::string PLACEMENT_ID;
+
 std::string hit_die;
 std::list<std::string> skills;
 
