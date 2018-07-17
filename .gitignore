@@ -56,7 +56,7 @@ dkms.conf
 results*
 
 #jetbrains nonsense
-#.idea/
-#CMakeLists.txt
-#cmake-build-debug/
+.idea/
+CMakeLists.txt
+cmake-build-debug/
 

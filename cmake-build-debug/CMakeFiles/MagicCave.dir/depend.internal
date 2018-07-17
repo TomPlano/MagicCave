@@ -8,10 +8,10 @@ CMakeFiles/MagicCave.dir/factories/characterFactory.cpp.o
  ../jsoncpp/include/json/forwards.h
  ../jsoncpp/include/json/value.h
  ../jsoncpp/include/json/version.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/characterFactory.cpp
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/characterFactory.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/json.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/character.h
+ /home/tom/Documents/MagicCave/factories/characterFactory.cpp
+ /home/tom/Documents/MagicCave/factories/characterFactory.h
+ /home/tom/Documents/MagicCave/jsoncpp/dist/json/json.h
+ /home/tom/Documents/MagicCave/products/character.h
 CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.o
  ../jsoncpp/include/json/allocator.h
  ../jsoncpp/include/json/config.h
@@ -19,10 +19,10 @@ CMakeFiles/MagicCave.dir/factories/itemFactory.cpp.o
  ../jsoncpp/include/json/forwards.h
  ../jsoncpp/include/json/value.h
  ../jsoncpp/include/json/version.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/itemFactory.cpp
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/itemFactory.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/json.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/itemProduct.h
+ /home/tom/Documents/MagicCave/factories/itemFactory.cpp
+ /home/tom/Documents/MagicCave/factories/itemFactory.h
+ /home/tom/Documents/MagicCave/jsoncpp/dist/json/json.h
+ /home/tom/Documents/MagicCave/products/itemProduct.h
 CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.o
  ../jsoncpp/include/json/allocator.h
  ../jsoncpp/include/json/config.h
@@ -30,17 +30,17 @@ CMakeFiles/MagicCave.dir/factories/lootFactory.cpp.o
  ../jsoncpp/include/json/forwards.h
  ../jsoncpp/include/json/value.h
  ../jsoncpp/include/json/version.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/itemFactory.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/lootFactory.cpp
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/lootFactory.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/json.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/itemProduct.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/lootProduct.h
+ /home/tom/Documents/MagicCave/factories/itemFactory.h
+ /home/tom/Documents/MagicCave/factories/lootFactory.cpp
+ /home/tom/Documents/MagicCave/factories/lootFactory.h
+ /home/tom/Documents/MagicCave/jsoncpp/dist/json/json.h
+ /home/tom/Documents/MagicCave/products/itemProduct.h
+ /home/tom/Documents/MagicCave/products/lootProduct.h
 CMakeFiles/MagicCave.dir/factories/mapFactory.cpp.o
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/mapFactory.cpp
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/mapFactory.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/mapProduct.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/tileProduct.h
+ /home/tom/Documents/MagicCave/factories/mapFactory.cpp
+ /home/tom/Documents/MagicCave/factories/mapFactory.h
+ /home/tom/Documents/MagicCave/products/mapProduct.h
+ /home/tom/Documents/MagicCave/products/tileProduct.h
 CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.o
  ../jsoncpp/include/json/allocator.h
  ../jsoncpp/include/json/config.h
@@ -48,14 +48,14 @@ CMakeFiles/MagicCave.dir/factories/monsterFactory.cpp.o
  ../jsoncpp/include/json/forwards.h
  ../jsoncpp/include/json/value.h
  ../jsoncpp/include/json/version.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/monsterFactory.cpp
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/monsterFactory.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/json.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/monsterProduct.h
+ /home/tom/Documents/MagicCave/factories/monsterFactory.cpp
+ /home/tom/Documents/MagicCave/factories/monsterFactory.h
+ /home/tom/Documents/MagicCave/jsoncpp/dist/json/json.h
+ /home/tom/Documents/MagicCave/products/monsterProduct.h
 CMakeFiles/MagicCave.dir/factories/trapFactory.cpp.o
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/trapFactory.cpp
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/trapFactory.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/trapProduct.h
+ /home/tom/Documents/MagicCave/factories/trapFactory.cpp
+ /home/tom/Documents/MagicCave/factories/trapFactory.h
+ /home/tom/Documents/MagicCave/products/trapProduct.h
 CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.o
  ../jsoncpp/include/json/allocator.h
  ../jsoncpp/include/json/assertions.h
@@ -68,8 +68,8 @@ CMakeFiles/MagicCave.dir/jsoncpp/dist/jsoncpp.cpp.o
  ../jsoncpp/include/json/writer.h
  ../jsoncpp/src/lib_json/json_tool.h
  ../jsoncpp/src/lib_json/json_valueiterator.inl
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/json.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/jsoncpp.cpp
+ /home/tom/Documents/MagicCave/jsoncpp/dist/json/json.h
+ /home/tom/Documents/MagicCave/jsoncpp/dist/jsoncpp.cpp
 CMakeFiles/MagicCave.dir/main.cpp.o
  ../jsoncpp/include/json/allocator.h
  ../jsoncpp/include/json/config.h
@@ -77,41 +77,41 @@ CMakeFiles/MagicCave.dir/main.cpp.o
  ../jsoncpp/include/json/forwards.h
  ../jsoncpp/include/json/value.h
  ../jsoncpp/include/json/version.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/characterFactory.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/itemFactory.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/lootFactory.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/mapFactory.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/monsterFactory.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/factories/trapFactory.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/jsoncpp/dist/json/json.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/main.cpp
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/character.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/itemProduct.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/lootProduct.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/mapProduct.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/monsterProduct.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/tileProduct.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/trapProduct.h
+ /home/tom/Documents/MagicCave/factories/characterFactory.h
+ /home/tom/Documents/MagicCave/factories/itemFactory.h
+ /home/tom/Documents/MagicCave/factories/lootFactory.h
+ /home/tom/Documents/MagicCave/factories/mapFactory.h
+ /home/tom/Documents/MagicCave/factories/monsterFactory.h
+ /home/tom/Documents/MagicCave/factories/trapFactory.h
+ /home/tom/Documents/MagicCave/jsoncpp/dist/json/json.h
+ /home/tom/Documents/MagicCave/main.cpp
+ /home/tom/Documents/MagicCave/products/character.h
+ /home/tom/Documents/MagicCave/products/itemProduct.h
+ /home/tom/Documents/MagicCave/products/lootProduct.h
+ /home/tom/Documents/MagicCave/products/mapProduct.h
+ /home/tom/Documents/MagicCave/products/monsterProduct.h
+ /home/tom/Documents/MagicCave/products/tileProduct.h
+ /home/tom/Documents/MagicCave/products/trapProduct.h
 CMakeFiles/MagicCave.dir/products/character.cpp.o
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/character.cpp
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/character.h
+ /home/tom/Documents/MagicCave/products/character.cpp
+ /home/tom/Documents/MagicCave/products/character.h
 CMakeFiles/MagicCave.dir/products/itemProduct.cpp.o
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/itemProduct.cpp
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/itemProduct.h
+ /home/tom/Documents/MagicCave/products/itemProduct.cpp
+ /home/tom/Documents/MagicCave/products/itemProduct.h
 CMakeFiles/MagicCave.dir/products/lootProduct.cpp.o
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/itemProduct.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/lootProduct.cpp
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/lootProduct.h
+ /home/tom/Documents/MagicCave/products/itemProduct.h
+ /home/tom/Documents/MagicCave/products/lootProduct.cpp
+ /home/tom/Documents/MagicCave/products/lootProduct.h
 CMakeFiles/MagicCave.dir/products/mapProduct.cpp.o
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/mapProduct.cpp
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/mapProduct.h
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/tileProduct.h
+ /home/tom/Documents/MagicCave/products/mapProduct.cpp
+ /home/tom/Documents/MagicCave/products/mapProduct.h
+ /home/tom/Documents/MagicCave/products/tileProduct.h
 CMakeFiles/MagicCave.dir/products/monsterProduct.cpp.o
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/monsterProduct.cpp
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/monsterProduct.h
+ /home/tom/Documents/MagicCave/products/monsterProduct.cpp
+ /home/tom/Documents/MagicCave/products/monsterProduct.h
 CMakeFiles/MagicCave.dir/products/tileProduct.cpp.o
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/tileProduct.cpp
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/tileProduct.h
+ /home/tom/Documents/MagicCave/products/tileProduct.cpp
+ /home/tom/Documents/MagicCave/products/tileProduct.h
 CMakeFiles/MagicCave.dir/products/trapProduct.cpp.o
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/trapProduct.cpp
- /Users/planot/Documents/Summer_2018/SeniorProject/MagicCave/products/trapProduct.h
+ /home/tom/Documents/MagicCave/products/trapProduct.cpp
+ /home/tom/Documents/MagicCave/products/trapProduct.h
