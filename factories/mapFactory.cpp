@@ -22,8 +22,11 @@ MapFactory::~MapFactory()
   for(int i = 0; i < xSize; i++)
   {
       free(cellFill[i]);
+      free(buffer[i]);
   }
   free(cellFill);
+  free(buffer);
+
 }
 DungeonMap MapFactory::create_map(int itterations)
 {

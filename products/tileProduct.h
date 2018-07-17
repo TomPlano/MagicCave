@@ -1,7 +1,7 @@
+#include <string>
 #ifndef TILE_PRODUCT
 #define TILE_PRODUCT
 
-#include <string>
 
 enum tile_type{
   Wall,
