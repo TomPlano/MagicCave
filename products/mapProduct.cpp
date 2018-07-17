@@ -13,7 +13,7 @@ DungeonMap::DungeonMap(int _xSize, int _ySize)
   }
 }
 DungeonMap::~DungeonMap() {
-    for (int i = 0; i < xSize; i++) {
+    for (int i = 0; i < xSize; i++) {// changex xise to ysize
         free(tiles[i]);
     }
     free(tiles);

@@ -16,7 +16,7 @@
 
 
 
-void popluate(DungeonMap map, DungeonTrap* traps, int num_traps, DungeonLoot* loots, int num_loots, DungeonMonster* monsters, int num_mons, Character* npcs, int num_npcs);
+int popluate(DungeonMap* map, DungeonTrap* traps, int num_traps, DungeonLoot* loots, int num_loots, DungeonMonster* monsters, int num_mons, Character* npcs, int num_npcs);
 
 int main (int argc, char* argv[])
 {
@@ -44,8 +44,10 @@ int main (int argc, char* argv[])
     dmap.print_map();
 
     //trap
+
     TrapFactory tfact;
     DungeonTrap traps[num_traps];
+
     for(int i=0; i<num_traps;i++)
     {
         traps[i]=tfact.create_trap();
@@ -54,6 +56,7 @@ int main (int argc, char* argv[])
     //loot
     LootFactory lfact;
     DungeonLoot loots[num_loots];
+
     for(int i=0; i<num_loots;i++)
     {
         loots[i]=lfact.create_loot(player_lvl);
@@ -62,10 +65,12 @@ int main (int argc, char* argv[])
     //monsters
     MonsterFactory monster_factory;
     DungeonMonster monsters[num_mons];
+
     for(int i=0; i<num_mons; i++)
     {
         monsters[i] = monster_factory.create_monster(player_lvl, player_count);
     }
+
 
     //npc
     CharacterFactory npc_factory;
@@ -87,19 +92,13 @@ int main (int argc, char* argv[])
     }
 
 //placement from sets of stuf
-popluate(dmap, traps, num_traps, loots, num_loots,  monsters, num_mons,  npcs, num_npcs);
-
-
-
-
-
-
+popluate(&dmap, traps, num_traps, loots, num_loots,  monsters, num_mons,  npcs, num_npcs);
 
   return 0;
 }
 
 
-void popluate(DungeonMap map, DungeonTrap* traps, int num_traps, DungeonLoot* loots, int num_loots, DungeonMonster* monsters, int num_mons, Character* npcs, int num_npcs)
+int popluate(DungeonMap* map, DungeonTrap* traps, int num_traps, DungeonLoot* loots, int num_loots, DungeonMonster* monsters, int num_mons, Character* npcs, int num_npcs)
 {
-
+    return 0;
 }

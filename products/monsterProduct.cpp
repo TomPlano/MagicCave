@@ -19,6 +19,7 @@ size=_size;
     PLACEMENT_ID = "Mon"+ std::to_string(monster_count);
 
 }
+DungeonMonster::DungeonMonster(){}
 std::string DungeonMonster::get_challenge(){return challenge;}
 void DungeonMonster::set_challenge(std::string i){challenge=i;}
 std::string DungeonMonster::get_xp(){return xp;}

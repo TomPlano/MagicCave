@@ -28,6 +28,7 @@ class DungeonMonster{
 
     static int monster_count;
     std::string PLACEMENT_ID;
+    DungeonMonster();
 
 private:
     std::string challenge;
