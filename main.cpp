@@ -111,11 +111,9 @@ int popluate(DungeonMap* map, DungeonTrap* traps, int num_traps, DungeonLoot* lo
     int id_offset = 33;
     
     for(int x = 0; x < num_traps; x ++){
-        char temp = id_offset;
-        std::string char_rep = std::to_string(temp);
-        traps[x].PLACEMENT_ID = char_rep;   
-        id_offset = inc_offset(id_offset); 
-std::cout<<char_rep<<std::endl;
+
+        traps[x].PLACEMENT_ID = id_offset;   
+
         bool invalid = true;
         int xPlace;
         int yPlace;
@@ -124,9 +122,10 @@ std::cout<<char_rep<<std::endl;
             yPlace = yplace(rng);
             if(map->tiles[xPlace][yPlace].type == 1){
                 invalid = false;
-                map->tiles[xPlace][yPlace].PLACEMENT_ID = char_rep;
+                map->tiles[xPlace][yPlace].PLACEMENT_ID = id_offset;
             }
         }
+        id_offset = inc_offset(id_offset); 
     }
 
 
