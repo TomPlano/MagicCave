@@ -15,8 +15,7 @@ type=_type;
 page=_page;
 name=_name;
 size=_size;
-    monster_count++;
-    PLACEMENT_ID = "Mon"+ std::to_string(monster_count);
+monster_count++;
 
 }
 DungeonMonster::DungeonMonster(){}

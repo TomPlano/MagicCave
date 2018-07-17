@@ -27,7 +27,7 @@ class DungeonMonster{
     void set_size(std::string s);
 
     static int monster_count;
-    std::string PLACEMENT_ID;
+    int PLACEMENT_ID;
     DungeonMonster();
 
 private:

@@ -6,7 +6,6 @@ Character::Character(bool is_npc)
 {
     if(is_npc) {
         npc_count++;
-        PLACEMENT_ID = "NPC"+ std::to_string(npc_count);
     }
 }
 

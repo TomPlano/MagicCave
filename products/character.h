@@ -28,7 +28,7 @@ int wis_mod;
 int cha_mod;
 int prof_bonus;
 int hp;
-std::string PLACEMENT_ID;
+int PLACEMENT_ID;
 
 std::string hit_die;
 std::list<std::string> skills;

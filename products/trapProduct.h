@@ -43,7 +43,7 @@ public:
   void print_trap();
   int x_coord,y_coord,radius,x_drop,y_drop;
   static int trap_count;
-  std::string PLACEMENT_ID;
+  int PLACEMENT_ID;
 private:
   int level;
   effect get_trap_effect(std::mt19937 rng);

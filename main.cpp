@@ -10,6 +10,7 @@
 #include "factories/lootFactory.h"
 #include "factories/monsterFactory.h"
 #include "factories/characterFactory.h"
+#include "factories/populate.h"
 
 #include "products/mapProduct.h"
 #include "products/lootProduct.h"
@@ -17,9 +18,6 @@
 #include "products/character.h"
 
 
-
-int popluate(DungeonMap* map, DungeonTrap* traps, int num_traps, DungeonLoot* loots, int num_loots, DungeonMonster* monsters, int num_mons, Character* npcs, int num_npcs);
-int inc_offset(int offset);
 
 int main (int argc, char* argv[])
 {
@@ -35,9 +33,9 @@ int main (int argc, char* argv[])
 
 
     int num_traps=5;
-    int num_loots=0;
-    int num_mons=0;
-    int num_npcs=0;
+    int num_loots=15;
+    int num_mons=15;
+    int num_npcs=20;
 
 
 
@@ -94,52 +92,10 @@ int main (int argc, char* argv[])
     }
 
 //placement from sets of stuf
-popluate(&dmap, traps, num_traps, loots, num_loots,  monsters, num_mons,  npcs, num_npcs);
+    populate(&dmap, traps, num_traps, loots, num_loots,  monsters, num_mons,  npcs, num_npcs);
 
     dmap.print_map();
   return 0;
 }
 
 
-int popluate(DungeonMap* map, DungeonTrap* traps, int num_traps, DungeonLoot* loots, int num_loots, DungeonMonster* monsters, int num_mons, Character* npcs, int num_npcs)
-{
-    std::default_random_engine rng;
-
-    std::uniform_int_distribution<int> xplace(0,map->xSize);
-    std::uniform_int_distribution<int> yplace(0,map->ySize);
-
-    int id_offset = 33;
-    
-    for(int x = 0; x < num_traps; x ++){
-
-        traps[x].PLACEMENT_ID = id_offset;   
-
-        bool invalid = true;
-        int xPlace;
-        int yPlace;
-        while(invalid){
-            xPlace = xplace(rng);
-            yPlace = yplace(rng);
-            if(map->tiles[xPlace][yPlace].type == 1){
-                invalid = false;
-                map->tiles[xPlace][yPlace].PLACEMENT_ID = id_offset;
-            }
-        }
-        id_offset = inc_offset(id_offset); 
-    }
-
-
-
-
-
-
-    return 0;
-}
-
-int inc_offset(int offset){
-    offset++;
-    if(offset==35||offset==46){
-        offset++;
-    }
-    return offset;
-}

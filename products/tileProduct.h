@@ -20,7 +20,7 @@ class Tile
     void print_tile();
     static int tile_count;
     tile_type type;
-    std::string PLACEMENT_ID;
+    int PLACEMENT_ID;
   private:
     modifiers mods;
 
