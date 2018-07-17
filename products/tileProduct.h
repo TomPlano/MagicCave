@@ -21,7 +21,7 @@ class Tile
   private:
     tile_type type;
     modifiers mods;
-    std::string item_id;
+//    std::string item_id;
 
 };
 
