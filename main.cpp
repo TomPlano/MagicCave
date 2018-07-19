@@ -32,10 +32,10 @@ int main (int argc, char* argv[])
   int player_count=atoi(argv[4]);
 
 
-    int num_traps=5;
-    int num_loots=15;
-    int num_mons=15;
-    int num_npcs=20;
+    int num_traps=0;
+    int num_loots=0;
+    int num_mons=0;
+    int num_npcs=96;
 
 
 
