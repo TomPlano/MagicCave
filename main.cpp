@@ -1,9 +1,12 @@
 
-#include <stdlib.h>
-#include <stdio.h>
+#include <cstdlib>
+#include <cstdio>
 #include <iostream>
 #include <random>
-#include <time.h>
+#include <ctime>
+
+#include <fstream>
+
 
 #include "factories/mapFactory.h"
 #include "factories/trapFactory.h"
@@ -17,7 +20,7 @@
 #include "products/monsterProduct.h"
 #include "products/character.h"
 
-
+#include "form/FDFparser.h"
 
 int main (int argc, char* argv[])
 {
@@ -91,8 +94,11 @@ int main (int argc, char* argv[])
       std::cout << "}" << std::endl;
     }
 
-//placement from sets of stuf
-    populate(&dmap, traps, num_traps, loots, num_loots,  monsters, num_mons,  npcs, num_npcs);
+
+   //pdf stuff
+  FDFparser parser;
+  parser.parse_file("pdf/dnd5eCS");
+  parser.print_keys();
 
     dmap.print_map();
   return 0;
