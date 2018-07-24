@@ -88,19 +88,15 @@ int main (int argc, char* argv[])
     Character pcs[player_count];
     for(int i=0; i<player_count; i++) {
       pcs[i] = char_factory.create_character(false);
-      std::cout << "Character " << i + 1 << " of " << player_count << " {" << std::endl;
-      std::cout << "Race/Class: " << pcs[i].char_race << " " << pcs[i].char_class << std::endl;
-      std::cout << "First Skill: " << pcs[i].skills.front() << std::endl;
-      std::cout << "}" << std::endl;
     }
 
 
    //pdf stuff
   FDFparser parser;
   parser.parse_file("pdf/dnd5eCS");
-  parser.print_keys();
+  parser.prep_char_sheets(pcs,player_count);
 
-    dmap.print_map();
+  dmap.print_map();
   return 0;
 }
 
