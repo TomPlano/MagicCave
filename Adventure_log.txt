@@ -1,95 +1,293 @@
 Monsters
-[7] Page: mtf 240
-Name: Stone Cursed, Challenge: 1, XP Reward: 200
-Alignment: LE, Type: Construct, Size: Medium
+[2] Page: vgm 197
+	Name: Thorny, Challenge: 1, XP Reward: 200
+	Alignment: N, Type: Plant, Size: Medium
 
-[8] Page: mm 330
-Name: Goat, Challenge: 0, XP Reward: 10
-Alignment: Unaligned, Type: Beast, Size: Medium
+[3] Page: vgm 139
+	Name: Dimetrodon, Challenge: 1/4, XP Reward: 50
+	Alignment: Unaligned, Type: Beast, Size: Medium
 
-[9] Page: mm 317
-Name: Ape, Challenge: 1/2, XP Reward: 100
-Alignment: Unaligned, Type: Beast, Size: Medium
+[4] Page: mm 328
+	Name: Giant Sea Horse, Challenge: 1/2, XP Reward: 100
+	Alignment: Unaligned, Type: Beast, Size: Large
 
-[:] Page: vgm 126
-Name: Gazer, Challenge: 1/2, XP Reward: 100
-Alignment: NE, Type: Aberration, Size: Tiny
+[5] Page: mm 216
+	Name: Magma Mephit, Challenge: 1/2, XP Reward: 100
+	Alignment: NE, Type: Elemental, Size: Small
 
-[;] Page: mm 341
-Name: Wolf, Challenge: 1/4, XP Reward: 50
-Alignment: Unaligned, Type: Beast, Size: Medium
+[6] Page: mm 330
+	Name: Goat, Challenge: 0, XP Reward: 10
+	Alignment: Unaligned, Type: Beast, Size: Medium
 
-[<] Page: mtf 158
-Name: Derro, Challenge: 1/4, XP Reward: 50
-Alignment: CE, Type: Humanoid, Size: Small
+[7] Page: mm 216
+	Name: Magma Mephit, Challenge: 1/2, XP Reward: 100
+	Alignment: NE, Type: Elemental, Size: Small
 
-[=] Page: mm 321
-Name: Dire Wolf, Challenge: 1, XP Reward: 200
-Alignment: Unaligned, Type: Beast, Size: Large
+[8] Page: vgm 208
+	Name: Swarm of Rot Grubs, Challenge: 1/2, XP Reward: 100
+	Alignment: Unaligned, Type: Beast, Size: Medium
 
-[>] Page: mtf 238
-Name: Female Steeder, Challenge: 1, XP Reward: 200
-Alignment: Unaligned, Type: Monstrosity, Size: Large
+[9] Page: vgm 179
+	Name: Neogi Hatchling, Challenge: 1/8, XP Reward: 25
+	Alignment: LE, Type: Aberration, Size: Tiny
 
-[?] Page: mm 329
-Name: Giant Vulture, Challenge: 1, XP Reward: 200
-Alignment: NE, Type: Beast, Size: Large
+[:] Page: mm 112
+	Name: Copper Dragon Wyrmling, Challenge: 1, XP Reward: 200
+	Alignment: CG, Type: Dragon, Size: Medium
 
-[@] Page: mm 317
-Name: Axe Beak, Challenge: 1/4, XP Reward: 50
-Alignment: Unaligned, Type: Beast, Size: Large
+[;] Page: mm 224
+	Name: Monodrone, Challenge: 1/8, XP Reward: 25
+	Alignment: LN, Type: Construct, Size: Medium
 
 
 Traps
-[!] Log_Swing
-Preasure plate
-Perception
-Poison
+[!] Magic
+	Affect: Missle
+	Trigger: Trip wire, Side effect: Poison
+	Check for Trap: Perception
 
-["] Darts
-Trip wire
-Perception
-Flames
+["] Pit
+	Trigger: Preasure plate, Side effect: Poison
+	Check for Trap: Perception
 
-[$] Magic
-Missle
-Trip wire
-Perception
-One way
+[$] Darts
+	Trigger: Trip wire, Side effect: Flames
+	Check for Trap: Perception
 
-[%] Teleport
-Trip wire
-Perception
-One way
+[%] Pit
+	Trigger: Preasure plate, Side effect: Flames
+	Check for Trap: Perception
 
-[&] Darts
-Trip wire
-Perception
-Flames
+[&] Pit
+	Trigger: Preasure plate, Side effect: Spikes
+	Check for Trap: Perception
 
-['] Sleep_Powder
-Preasure plate
-Perception
-Spikes
+['] Teleport
+	Trigger: Trip wire, Side effect: Poison
+	Check for Trap: Perception
 
-[(] Log_Swing
-Preasure plate
-Perception
-Poison
+[(] Sleep_Powder
+	Trigger: Trip wire, Side effect: Spikes
+	Check for Trap: Perception
 
-[)] Magic
-Missle
-Trip wire
-Perception
-One way
+[)] Teleport
+	Trigger: Preasure plate, Side effect: Spikes
+	Check for Trap: Perception
 
-[*] Teleport
-Trip wire
-Perception
-One way
+[*] Darts
+	Trigger: Preasure plate, Side effect: Spikes
+	Check for Trap: Perception
 
-[+] Arrows
-Preasure plate
-Perception
-Spikes
+[+] Magic
+	Affect: Missle
+	Trigger: Preasure plate, Side effect: One way
+	Check for Trap: Perception
+
+
+Loot
+[,]
+	[Item1] Name: Efreeti Chain
+			Page: dmg 167, Attunemnet: yes, Page: dmg 167
+			Type: Armor, Rarity: Legendary
+
+	[Item2] Name: Wand of Conducting
+			Page: xge 140, Attunemnet: no, Page: xge 140
+			Type: Wand, Rarity: Common
+
+	[Item3] Name: Bead of Nourishment
+			Page: xge 136, Attunemnet: no, Page: xge 136
+			Type: Wondrous Item, Rarity: Common
+
+	[Item4] Name: Hat of Vermin
+			Page: xge 137, Attunemnet: no, Page: xge 137
+			Type: Wondrous Item, Rarity: Common
+
+	[Item5] Name: Spell Scroll, Cantrip
+			Page: dmg 200, Attunemnet: no, Page: dmg 200
+			Type: Scroll, Rarity: Common
+
+	[Item6] Name: Charlatan's Die
+			Page: xge 136, Attunemnet: yes, Page: xge 136
+			Type: Wondrous Item, Rarity: Common
+
+	[Item7] Name: Bracers of Archery
+			Page: dmg 156, Attunemnet: yes, Page: dmg 156
+			Type: Wondrous Item, Rarity: Uncommon
+
+	[Item8] Name: Pole of Angling
+			Page: xge 138, Attunemnet: no, Page: xge 138
+			Type: Wondrous Item, Rarity: Common
+
+	[Item9] Name: Mace of Terror
+			Page: dmg 180, Attunemnet: yes, Page: dmg 180
+			Type: Weapon, Rarity: Rare
+
+	[Item10] Name: Ring of Telekinesis
+			Page: dmg 193, Attunemnet: yes, Page: dmg 193
+			Type: Ring, Rarity: Very Rare
+
+[-]
+	[Item11] Name: Arrow of Slaying
+			Page: dmg 152, Attunemnet: no, Page: dmg 152
+			Type: Weapon, Rarity: Very Rare
+
+	[Item12] Name: Potion of Flying
+			Page: dmg 187, Attunemnet: no, Page: dmg 187
+			Type: Potion, Rarity: Very Rare
+
+	[Item13] Name: Ring of Warmth
+			Page: dmg 193, Attunemnet: yes, Page: dmg 193
+			Type: Ring, Rarity: Uncommon
+
+	[Item14] Name: Potion of Growth
+			Page: dmg 187, Attunemnet: no, Page: dmg 187
+			Type: Potion, Rarity: Uncommon
+
+	[Item15] Name: Ear Horn of Hearing
+			Page: xge 137, Attunemnet: no, Page: xge 137
+			Type: Wondrous Item, Rarity: Common
+
+	[Item16] Name: Weapon of Warning
+			Page: dmg 213, Attunemnet: yes, Page: dmg 213
+			Type: Weapon, Rarity: Uncommon
+
+	[Item17] Name: Pole of Collapsing
+			Page: xge 138, Attunemnet: no, Page: xge 138
+			Type: Wondrous Item, Rarity: Common
+
+	[Item18] Name: Ioun Stone, Insight
+			Page: dmg 176, Attunemnet: yes, Page: dmg 176
+			Type: Wondrous Item, Rarity: Very Rare
+
+	[Item19] Name: Clockwork Amulet
+			Page: xge 137, Attunemnet: no, Page: xge 137
+			Type: Wondrous Item, Rarity: Common
+
+	[Item20] Name: Clothes of Mending
+			Page: xge 137, Attunemnet: no, Page: xge 137
+			Type: Wondrous Item, Rarity: Common
+
+[/]
+	[Item21] Name: Staff of Adornment
+			Page: xge 139, Attunemnet: no, Page: xge 139
+			Type: Staff, Rarity: Common
+
+	[Item22] Name: Ring of Warmth
+			Page: dmg 193, Attunemnet: yes, Page: dmg 193
+			Type: Ring, Rarity: Uncommon
+
+	[Item23] Name: Spell Scroll, Cantrip
+			Page: dmg 200, Attunemnet: no, Page: dmg 200
+			Type: Scroll, Rarity: Common
+
+	[Item24] Name: Heward's Handy Spice Pouch
+			Page: xge 137, Attunemnet: no, Page: xge 137
+			Type: Wondrous Item, Rarity: Common
+
+	[Item25] Name: Wand of Web
+			Page: dmg 212, Attunemnet: yes, Page: dmg 212
+			Type: Wand, Rarity: Uncommon
+
+	[Item26] Name: Horseshoes of Speed
+			Page: dmg 175, Attunemnet: no, Page: dmg 175
+			Type: Wondrous Item, Rarity: Rare
+
+	[Item27] Name: Ring of Mind Shielding
+			Page: dmg 191, Attunemnet: yes, Page: dmg 191
+			Type: Ring, Rarity: Uncommon
+
+	[Item28] Name: Wand of Lightning Bolts
+			Page: dmg 211, Attunemnet: yes, Page: dmg 211
+			Type: Wand, Rarity: Rare
+
+	[Item29] Name: Potion of Healing
+			Page: dmg 187, Attunemnet: no, Page: dmg 187
+			Type: Potion, Rarity: Common
+
+	[Item30] Name: Hat of Wizardry
+			Page: xge 137, Attunemnet: yes, Page: xge 137
+			Type: Wondrous Item, Rarity: Common
+
+[0]
+	[Item31] Name: Sentinel Shield
+			Page: dmg 199, Attunemnet: no, Page: dmg 199
+			Type: Armor, Rarity: Uncommon
+
+	[Item32] Name: Gauntlets of Ogre Power
+			Page: dmg 171, Attunemnet: yes, Page: dmg 171
+			Type: Wondrous Item, Rarity: Uncommon
+
+	[Item33] Name: Gem of Seeing
+			Page: dmg 172, Attunemnet: yes, Page: dmg 172
+			Type: Wondrous Item, Rarity: Rare
+
+	[Item34] Name: Brooch of Shielding
+			Page: dmg 156, Attunemnet: yes, Page: dmg 156
+			Type: Wondrous Item, Rarity: Uncommon
+
+	[Item35] Name: Broom of Flying
+			Page: dmg 156, Attunemnet: no, Page: dmg 156
+			Type: Wondrous Item, Rarity: Uncommon
+
+	[Item36] Name: Potion of Gaseous Form
+			Page: dmg 187, Attunemnet: no, Page: dmg 187
+			Type: Potion, Rarity: Rare
+
+	[Item37] Name: Unbreakable Arrow
+			Page: xge 139, Attunemnet: no, Page: xge 139
+			Type: Weapon, Rarity: Common
+
+	[Item38] Name: Gauntlets of Ogre Power
+			Page: dmg 171, Attunemnet: yes, Page: dmg 171
+			Type: Wondrous Item, Rarity: Uncommon
+
+	[Item39] Name: Heward's Handy Haversack
+			Page: dmg 174, Attunemnet: no, Page: dmg 174
+			Type: Wondrous Item, Rarity: Rare
+
+	[Item40] Name: Cast-Off Armor
+			Page: xge 136, Attunemnet: no, Page: xge 136
+			Type: Armor, Rarity: Common
+
+[1]
+	[Item41] Name: Bag of Holding
+			Page: dmg 153, Attunemnet: no, Page: dmg 153
+			Type: Wondrous Item, Rarity: Uncommon
+
+	[Item42] Name: 
+			Page: , Attunemnet: , Page: 
+			Type: , Rarity: 
+
+	[Item43] Name: Wand of Smiles
+			Page: xge 140, Attunemnet: no, Page: xge 140
+			Type: Wand, Rarity: Common
+
+	[Item44] Name: Potion of Fire Breath
+			Page: dmg 187, Attunemnet: no, Page: dmg 187
+			Type: Potion, Rarity: Uncommon
+
+	[Item45] Name: Charlatan's Die
+			Page: xge 136, Attunemnet: yes, Page: xge 136
+			Type: Wondrous Item, Rarity: Common
+
+	[Item46] Name: Ammunition, +1
+			Page: dmg 150, Attunemnet: no, Page: dmg 150
+			Type: Weapon, Rarity: Uncommon
+
+	[Item47] Name: Boots of Levitation
+			Page: dmg 155, Attunemnet: yes, Page: dmg 155
+			Type: Wondrous Item, Rarity: Rare
+
+	[Item48] Name: Rod of Rulership
+			Page: dmg 197, Attunemnet: yes, Page: dmg 197
+			Type: Rod, Rarity: Rare
+
+	[Item49] Name: Ear Horn of Hearing
+			Page: xge 137, Attunemnet: no, Page: xge 137
+			Type: Wondrous Item, Rarity: Common
+
+	[Item50] Name: Pipes of the Sewers
+			Page: dmg 185, Attunemnet: yes, Page: dmg 185
+			Type: Wondrous Item, Rarity: Uncommon
+
 

@@ -13,6 +13,7 @@ class DungeonLoot
     void add_item(DungeonItem new_item);
     std::string get_blocktext();
     static int loot_count;
+    std::string print_id();
     int PLACEMENT_ID;
 
 private:

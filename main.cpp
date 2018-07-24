@@ -34,7 +34,7 @@ int main (int argc, char* argv[])
 
 
     int num_traps=10;
-    int num_loots=10;
+    int num_loots=5;
     int num_mons=10;
     int num_npcs=10;
 
@@ -102,17 +102,25 @@ int main (int argc, char* argv[])
 
     adventure_log << "Monsters\n"; 
     for(DungeonMonster monster : monsters){
-//        std::string output = monster.print_monster();
         adventure_log << monster.print_monster();
     }
     adventure_log << "\n";
     adventure_log << "Traps\n"; 
     for(DungeonTrap trap : traps){
-//        std::string output = monster.print_monster();
         adventure_log << trap.print_trap();
         adventure_log << "\n";
     }
-
+    adventure_log << "\n";
+    adventure_log << "Loot\n"; 
+    for(DungeonLoot loot: loots){
+        adventure_log << loot.print_id();
+        for(DungeonItem item : loot.get_items()){
+            std::string item_name = item.print_item();
+            adventure_log << item_name;
+            adventure_log << "\n";
+        }
+    }
+    adventure_log << "\n";
     
     adventure_log.close();
     return 0;

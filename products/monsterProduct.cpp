@@ -38,8 +38,8 @@ std::string DungeonMonster::print_monster(){
     char id = PLACEMENT_ID;
     std::string monsterInfo = "";
     monsterInfo += "["+std::string(1,id)+"] Page: "+page+"\n";
-    monsterInfo += "Name: "+name+", Challenge: "+challenge+", XP Reward: "+xp+"\n";
-    monsterInfo += "Alignment: "+alignment+", Type: "+type+", Size: "+size+"\n\n";
+    monsterInfo += "\tName: "+name+", Challenge: "+challenge+", XP Reward: "+xp+"\n";
+    monsterInfo += "\tAlignment: "+alignment+", Type: "+type+", Size: "+size+"\n\n";
 
     return monsterInfo;
 }

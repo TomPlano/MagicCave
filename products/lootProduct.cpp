@@ -18,3 +18,8 @@ void DungeonLoot::add_item(DungeonItem new_item)
 {
   items.push_back(new_item);
 }
+std::string DungeonLoot::print_id(){
+    char id = PLACEMENT_ID;
+    return "["+std::string(1,id)+"]\n";
+
+}

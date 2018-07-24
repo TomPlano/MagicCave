@@ -33,3 +33,12 @@ std::string DungeonItem::get_name(){return name;}
 void DungeonItem::set_name(std::string s){name=s;}
 std::string DungeonItem::get_rarity(){return rarity;}
 void DungeonItem::set_rarity(std::string s){rarity=s;}
+
+std::string DungeonItem::print_item(){
+    std::string result = "";
+    result += "\t["+PLACEMENT_ID+"] Name: "+name+"\n";
+    result += "\t\t\tPage: "+page+", Attunemnet: "+attunement+", Page: "+page+"\n";
+    result += "\t\t\tType: "+type+", Rarity: "+rarity+"\n";
+
+    return result;
+}
