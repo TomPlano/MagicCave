@@ -1,0 +1,95 @@
+Monsters
+[7] Page: mtf 240
+Name: Stone Cursed, Challenge: 1, XP Reward: 200
+Alignment: LE, Type: Construct, Size: Medium
+
+[8] Page: mm 330
+Name: Goat, Challenge: 0, XP Reward: 10
+Alignment: Unaligned, Type: Beast, Size: Medium
+
+[9] Page: mm 317
+Name: Ape, Challenge: 1/2, XP Reward: 100
+Alignment: Unaligned, Type: Beast, Size: Medium
+
+[:] Page: vgm 126
+Name: Gazer, Challenge: 1/2, XP Reward: 100
+Alignment: NE, Type: Aberration, Size: Tiny
+
+[;] Page: mm 341
+Name: Wolf, Challenge: 1/4, XP Reward: 50
+Alignment: Unaligned, Type: Beast, Size: Medium
+
+[<] Page: mtf 158
+Name: Derro, Challenge: 1/4, XP Reward: 50
+Alignment: CE, Type: Humanoid, Size: Small
+
+[=] Page: mm 321
+Name: Dire Wolf, Challenge: 1, XP Reward: 200
+Alignment: Unaligned, Type: Beast, Size: Large
+
+[>] Page: mtf 238
+Name: Female Steeder, Challenge: 1, XP Reward: 200
+Alignment: Unaligned, Type: Monstrosity, Size: Large
+
+[?] Page: mm 329
+Name: Giant Vulture, Challenge: 1, XP Reward: 200
+Alignment: NE, Type: Beast, Size: Large
+
+[@] Page: mm 317
+Name: Axe Beak, Challenge: 1/4, XP Reward: 50
+Alignment: Unaligned, Type: Beast, Size: Large
+
+
+Traps
+[!] Log_Swing
+Preasure plate
+Perception
+Poison
+
+["] Darts
+Trip wire
+Perception
+Flames
+
+[$] Magic
+Missle
+Trip wire
+Perception
+One way
+
+[%] Teleport
+Trip wire
+Perception
+One way
+
+[&] Darts
+Trip wire
+Perception
+Flames
+
+['] Sleep_Powder
+Preasure plate
+Perception
+Spikes
+
+[(] Log_Swing
+Preasure plate
+Perception
+Poison
+
+[)] Magic
+Missle
+Trip wire
+Perception
+One way
+
+[*] Teleport
+Trip wire
+Perception
+One way
+
+[+] Arrows
+Preasure plate
+Perception
+Spikes
+

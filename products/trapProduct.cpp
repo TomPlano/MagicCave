@@ -11,8 +11,9 @@ DungeonTrap::DungeonTrap()
   trap_trigger = get_trigger(rng);
   countermeasures = get_countermeasure(rng);
   mods = get_modifiers(rng);
+
   switch (trap_effect) {
-    case  Falling_Rocks:
+/*    case  Falling_Rocks:
       break;
     case  Log_Swing:
       break;
@@ -25,7 +26,7 @@ DungeonTrap::DungeonTrap()
     case  Pit:
      break;
     case  Teleport:
-     break;
+     break;*/
     case  Magic:
      magic_trap = get_magic_effect(rng);
      break;
@@ -35,37 +36,77 @@ DungeonTrap::DungeonTrap()
 
   trap_count++;
 }
-void DungeonTrap::print_trap()
+std::string DungeonTrap::print_trap()
 {
-  switch (trap_effect) {
-    case  Falling_Rocks:
-      printf("Falling_Rocks\n");
-      break;
-    case  Log_Swing:
-      printf("Log_Swing\n");
-      break;
-    case  Sleep_Powder:
-      printf("Sleep_Powder\n");
-      break;
-    case  Arrows:
-      printf("Arrows\n");
-       break;
-    case  Darts:
-     printf("Darts\n");
-     break;
-    case  Pit:
-      printf("Pit\n");
-     break;
-    case  Teleport:
-     printf("Teleport\n");
-     break;
-    case  Magic:
-     printf("Magic\n");
-     break;
-     default:
-     printf("Error\n");
-      break;
-  }
+    std::string result = "";
+    char id = PLACEMENT_ID;
+    std::string monsterInfo = "";
+    monsterInfo += "["+std::string(1,id)+"] ";
+
+    switch (trap_effect) {
+        case  Falling_Rocks:
+            monsterInfo += "Falling_Rocks\n";
+            break;
+        case Log_Swing:
+            monsterInfo += "Log_Swing\n";
+            break;
+        case Sleep_Powder:
+            monsterInfo += "Sleep_Powder\n";
+            break;
+        case Arrows:
+            monsterInfo += "Arrows\n";
+            break;
+        case Darts:
+            monsterInfo += "Darts\n";
+            break;
+        case Pit:
+            monsterInfo += "Pit\n";
+            break;
+        case Teleport:
+            monsterInfo += "Teleport\n";
+            break;
+        case Magic:
+            monsterInfo += "Magic\n";
+            switch (magic_trap) {
+                case Missle:
+                    monsterInfo += "Missle\n";
+                    break;
+                }
+            break;
+    }
+
+    switch (trap_trigger) {
+        case Preasure_Plate:
+            monsterInfo += "Preasure plate\n";
+            break;
+        case Trip_Wire:
+            monsterInfo += "Trip wire\n";
+            break;
+    }
+
+    switch (countermeasures) {
+        case Perception:
+            monsterInfo += "Perception\n"; 
+            break;
+    }
+
+    switch (mods) {
+        case Poison:
+            monsterInfo += "Poison\n"; 
+            break;
+        case Spiked:
+            monsterInfo += "Spikes\n"; 
+            break;
+        case Flaming:
+            monsterInfo += "Flames\n"; 
+            break;
+        case One_Way:
+            monsterInfo += "One way\n"; 
+            break;
+    }
+
+    return monsterInfo;
+
 }
 
 //private

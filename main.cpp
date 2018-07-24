@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <iostream>
+#include <fstream>
 #include <random>
 #include <time.h>
 
@@ -32,10 +33,10 @@ int main (int argc, char* argv[])
   int player_count=atoi(argv[4]);
 
 
-    int num_traps=0;
-    int num_loots=0;
-    int num_mons=0;
-    int num_npcs=96;
+    int num_traps=10;
+    int num_loots=10;
+    int num_mons=10;
+    int num_npcs=10;
 
 
 
@@ -95,7 +96,26 @@ int main (int argc, char* argv[])
     populate(&dmap, traps, num_traps, loots, num_loots,  monsters, num_mons,  npcs, num_npcs);
 
     dmap.print_map();
-  return 0;
+
+    std::ofstream adventure_log;
+    adventure_log.open("Adventure_log.txt");
+
+    adventure_log << "Monsters\n"; 
+    for(DungeonMonster monster : monsters){
+//        std::string output = monster.print_monster();
+        adventure_log << monster.print_monster();
+    }
+    adventure_log << "\n";
+    adventure_log << "Traps\n"; 
+    for(DungeonTrap trap : traps){
+//        std::string output = monster.print_monster();
+        adventure_log << trap.print_trap();
+        adventure_log << "\n";
+    }
+
+    
+    adventure_log.close();
+    return 0;
 }
 
 

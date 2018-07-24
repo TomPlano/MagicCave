@@ -25,6 +25,7 @@ class DungeonMonster{
     void set_page(std::string s);
     std::string get_size();
     void set_size(std::string s);
+    std::string print_monster();
 
     static int monster_count;
     int PLACEMENT_ID;

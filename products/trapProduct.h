@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string>
 
 enum effect{
   Falling_Rocks,
@@ -40,7 +41,7 @@ enum magic_eff{
 class DungeonTrap{
 public:
   DungeonTrap();
-  void print_trap();
+  std::string print_trap();
   int x_coord,y_coord,radius,x_drop,y_drop;
   static int trap_count;
   int PLACEMENT_ID;
