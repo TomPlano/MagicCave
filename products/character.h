@@ -32,6 +32,7 @@ int PLACEMENT_ID;
 
 std::string hit_die;
 std::list<std::string> skills;
+std::list<std::string> proficiency;
 
 
 };

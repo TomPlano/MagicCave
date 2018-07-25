@@ -21,6 +21,7 @@ public:
     std::string build_fdf_contents(std::map <std::string,std::string> set);
     void print_keys(std::map <std::string,std::string> set);
     std::map <std::string,std::string> key_val;
+    std::string format_proficiency(std::string prof);
 };
 
 

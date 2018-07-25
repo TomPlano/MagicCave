@@ -29,7 +29,7 @@ Character CharacterFactory::create_character(bool is_npc)
 
   Character ch (is_npc);
   ch.level=1;
-  ch.prof_bonus = std::ceil(ch.level/4)+1;
+  ch.prof_bonus = 2;
   ch.char_race = char_race["name"].asString();
   ch.char_class = char_class["name"].asString();
   ch.hp = char_class["hd"]["faces"].asInt();
@@ -48,6 +48,7 @@ Character CharacterFactory::create_character(bool is_npc)
   ch.wis_mod= std::floor((ch.wis-10)/2);
   ch.cha_mod= std::floor((ch.cha-10)/2);
   ch.skills = skill_gen(char_class);
+  ch.proficiency=list_reformat(char_class["proficiency"]);
 
   return ch;
 }
@@ -69,6 +70,21 @@ int CharacterFactory::stat_gen()
     }
     return result;
 }
+
+
+std::list<std::string> CharacterFactory::list_reformat(Json::Value profs){
+    std::vector<std::string> local_skills;
+    std::list<std::string> skill_gen_result;
+    for (auto itr : profs) {
+        local_skills.push_back(itr.asString());
+    }
+    for (std::vector<std::string>::iterator it=local_skills.begin(); it!=local_skills.end(); ++it)
+    {
+        skill_gen_result.push_front(*it);
+    }
+    return skill_gen_result;
+}
+
 std::list<std::string> CharacterFactory::skill_gen(Json::Value classs)
 {
   int choose = classs["startingProficiencies"]["skills"]["choose"].asInt();

@@ -39,30 +39,77 @@ void FDFparser::prep_char_sheets(Character* characters, int pc_count){
         temp["WIS"]=std::to_string(characters[i].wis);
 
         temp["STRmod"]=std::to_string(characters[i].str_mod);
-        temp["CHamod"]=std::to_string(characters[i].cha_mod);
-        temp["DEXmod "]=std::to_string(characters[i].dex_mod);
+        temp["CHamod"]=std::to_string(characters[i].cha_mod);//this is a typo in wizards stuff. do not change
+        temp["DEXmod "]=std::to_string(characters[i].dex_mod);//this is a typo in wizards stuff. do not change
+        temp["CHAmod"]=std::to_string(characters[i].cha_mod);
+        temp["DEXmod"]=std::to_string(characters[i].dex_mod);
         temp["CONmod"]=std::to_string(characters[i].con_mod);
         temp["INTmod"]=std::to_string(characters[i].intel_mod);
         temp["WISmod"]=std::to_string(characters[i].wis_mod);
 
         temp["ProfBonus"]=std::to_string(characters[i].prof_bonus);
         temp["HPMax"]=std::to_string(characters[i].hp);
+        temp["HPTotal"]=std::to_string(characters[i].hp);
+        temp["HPCurrent"]=std::to_string(characters[i].hp);
+
+
         temp["HD"]=characters[i].hit_die;
+
+        for(auto skill: characters[i].skills){
+            temp[skill]=std::to_string(characters[i].prof_bonus);
+            temp[skill+" "]=std::to_string(characters[i].prof_bonus);
+
+        }
+
+
+        temp["ST Strength"]=temp["STRmod"];
+        temp["ST Charisma"]=temp["CHAmod"];
+        temp["ST Constitution"]=temp["CONmod"];
+        temp["ST Dexterity"]=temp["DEXmod"];
+        temp["ST Intelligence"]=temp["INTmod"];
+        temp["ST Wisdom"]=temp["WISmod"];
+
+        for(auto profs: characters[i].proficiency){
+            std::string prof_copy= profs;
+            std::transform(prof_copy.begin(), prof_copy.end(), prof_copy.begin(), toupper);
+            temp["ST "+format_proficiency(profs)]=std::to_string(characters[i].prof_bonus)+ "+"+temp[prof_copy+"mod"];
+
+        }
+
+
+        temp["Passive"]="10+"+temp["WISmod"];
+
+
+
 
         //create string to dump to file
         std::string file_contents = build_fdf_contents(temp);
 
         //dump to file
+        print_keys(temp);
 
         std::ofstream output("pdf/player"+std::to_string(i)+".fdf");
         output << file_contents;
         output.close();
+        break;
+
+
+
+
 
         //print_keys(temp);
 
     }
 }
 
+std::string FDFparser::format_proficiency(std::string prof){
+    if (prof=="int") return "Intelligence" ;
+    else if (prof=="str") return "Strength";
+    else if (prof=="wis") return "Wisdom";
+    else if (prof=="con") return "Constitution";
+    else if (prof=="dex") return  "Dexterity";
+    else return "Charisma";
+}
 
 std::string FDFparser::build_fdf_contents(std::map <std::string,std::string> set){
     std::string body = "%FDF-1.2\n"
