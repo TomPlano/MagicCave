@@ -17,7 +17,7 @@ class Tile
 {
   public:
     Tile(bool _type);
-    void print_tile();
+    std::string print_tile();
     static int tile_count;
     tile_type type;
     int PLACEMENT_ID;

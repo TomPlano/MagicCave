@@ -1,5 +1,9 @@
 #include "populate.h"
 
+#include <stdio.h>
+#include <string>
+#include <stdlib.h>
+
 
 int inc_offset(int offset){
     offset++;
@@ -31,7 +35,7 @@ int place_class(DungeonMap* map, T list ,int count , int id_offset, std::default
     return id_offset;
 }
 
-int populate(DungeonMap* map, DungeonTrap* traps, int num_traps, DungeonLoot* loots, int num_loots, DungeonMonster* monsters, int num_mons, Character* npcs, int num_npcs)
+int populate(DungeonMap* map, DungeonTrap* traps, int num_traps, DungeonItem* loot, int num_loots, DungeonMonster* monsters, int num_mons, Character* npcs, int num_npcs)
 {
     std::default_random_engine rng;
 
@@ -40,7 +44,7 @@ int populate(DungeonMap* map, DungeonTrap* traps, int num_traps, DungeonLoot* lo
 
     int id_offset = 33;
     id_offset = place_class(map, traps,num_traps,id_offset,rng,xplace,yplace);
-    id_offset = place_class(map, loots,num_loots,id_offset,rng,xplace,yplace);
+    id_offset = place_class(map, loot,num_loots,id_offset,rng,xplace,yplace);
     id_offset = place_class(map, monsters,num_mons,id_offset,rng,xplace,yplace);
     id_offset = place_class(map, npcs,num_npcs,id_offset,rng,xplace,yplace);
 

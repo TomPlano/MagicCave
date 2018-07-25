@@ -9,15 +9,15 @@ class DungeonLoot
 {
   public:
     DungeonLoot();
-    std::vector<DungeonItem> get_items();
+    DungeonItem* get_items();
     void add_item(DungeonItem new_item);
     std::string get_blocktext();
     static int loot_count;
     std::string print_id();
     int PLACEMENT_ID;
+    std::vector<DungeonItem> items;
 
 private:
-    std::vector<DungeonItem> items;
     std::string blocktext;
 };
 

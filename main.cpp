@@ -18,8 +18,6 @@
 #include "products/monsterProduct.h"
 #include "products/character.h"
 
-
-
 int main (int argc, char* argv[])
 {
   if(argc!=5)
@@ -34,9 +32,9 @@ int main (int argc, char* argv[])
 
 
     int num_traps=10;
-    int num_loots=5;
     int num_mons=10;
     int num_npcs=10;
+    int num_loot=10;//DO NOT CHANGE
 
 
 
@@ -56,12 +54,7 @@ int main (int argc, char* argv[])
 
     //loot
     LootFactory lfact;
-    DungeonLoot loots[num_loots];
-
-    for(int i=0; i<num_loots;i++)
-    {
-        loots[i]=lfact.create_loot(player_lvl);
-    }
+    DungeonLoot loots = lfact.create_loot(player_lvl);
 
     //monsters
     MonsterFactory monster_factory;
@@ -93,12 +86,16 @@ int main (int argc, char* argv[])
     }
 
 //placement from sets of stuf
-    populate(&dmap, traps, num_traps, loots, num_loots,  monsters, num_mons,  npcs, num_npcs);
+    populate(&dmap, traps, num_traps, loots.get_items(), num_loot,  monsters, num_mons,  npcs, num_npcs);
 
-    dmap.print_map();
+   
 
     std::ofstream adventure_log;
     adventure_log.open("Adventure_log.txt");
+
+    adventure_log << "Map\n"; 
+    adventure_log << dmap.print_map();
+    adventure_log << "\n";
 
     adventure_log << "Monsters\n"; 
     for(DungeonMonster monster : monsters){
@@ -112,13 +109,10 @@ int main (int argc, char* argv[])
     }
     adventure_log << "\n";
     adventure_log << "Loot\n"; 
-    for(DungeonLoot loot: loots){
-        adventure_log << loot.print_id();
-        for(DungeonItem item : loot.get_items()){
-            std::string item_name = item.print_item();
-            adventure_log << item_name;
-            adventure_log << "\n";
-        }
+    for(DungeonItem item : loots.items){
+        std::string item_name = item.print_item();
+        adventure_log << item_name;
+        adventure_log << "\n";
     }
     adventure_log << "\n";
     

@@ -16,6 +16,6 @@ Tile::Tile(bool _type){
   tile_count++;
 
 }
-void Tile::print_tile(){
-    printf("%c",PLACEMENT_ID);
+std::string Tile::print_tile(){
+    return std::string(1, PLACEMENT_ID);
 }

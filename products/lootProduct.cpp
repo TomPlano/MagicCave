@@ -6,9 +6,10 @@ DungeonLoot::DungeonLoot(){
 }
 
 
-std::vector<DungeonItem> DungeonLoot::get_items()
+DungeonItem* DungeonLoot::get_items()
 {
-  return items;
+    DungeonItem* loot = &items[0];
+  return loot;
 }
 std::string DungeonLoot::get_blocktext()
 {
