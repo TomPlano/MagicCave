@@ -91,12 +91,6 @@ void FDFparser::prep_char_sheets(Character* characters, int pc_count){
         std::ofstream output("pdf/player"+std::to_string(i)+".fdf");
         output << file_contents;
         output.close();
-        break;
-
-
-
-
-
         //print_keys(temp);
 
     }
