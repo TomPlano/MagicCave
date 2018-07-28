@@ -12,7 +12,7 @@ CPP = g++
 LINK = g++
 LFLAGS= -std=c++11
 PROJNAME = Gen.app
-SRCDIRS = factories products
+SRCDIRS = factories products form
 OBJDIR=objects
 TEMP = main.o\
 mapFactory.o mapProduct.o tileProduct.o\
@@ -22,7 +22,8 @@ itemFactory.o itemProduct.o\
 monsterFactory.o monsterProduct.o\
 characterFactory.o character.o\
 jsoncpp.o\
-populate.o
+populate.o\
+FDFparser.o
 OBJS=$(addprefix $(OBJDIR)/,$(TEMP))
 all: jsoncpp $(SRCDIRS) $(PROJNAME)
 

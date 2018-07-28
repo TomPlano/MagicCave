@@ -1,10 +1,13 @@
 
-#include <stdlib.h>
-#include <stdio.h>
+#include <cstdlib>
+#include <cstdio>
 #include <iostream>
 #include <fstream>
 #include <random>
-#include <time.h>
+#include <ctime>
+
+#include <fstream>
+
 
 #include "factories/mapFactory.h"
 #include "factories/trapFactory.h"
@@ -17,6 +20,8 @@
 #include "products/lootProduct.h"
 #include "products/monsterProduct.h"
 #include "products/character.h"
+
+#include "form/FDFparser.h"
 
 int main (int argc, char* argv[])
 {
@@ -79,43 +84,44 @@ int main (int argc, char* argv[])
     Character pcs[player_count];
     for(int i=0; i<player_count; i++) {
       pcs[i] = char_factory.create_character(false);
-      std::cout << "Character " << i + 1 << " of " << player_count << " {" << std::endl;
-      std::cout << "Race/Class: " << pcs[i].char_race << " " << pcs[i].char_class << std::endl;
-      std::cout << "First Skill: " << pcs[i].skills.front() << std::endl;
-      std::cout << "}" << std::endl;
     }
 
 //placement from sets of stuf
     populate(&dmap, traps, num_traps, loots.get_items(), num_loot,  monsters, num_mons,  npcs, num_npcs);
 
-   
+   //pdf stuff
+  FDFparser parser;
+  parser.parse_file("pdf/dnd5eCS");
+  parser.prep_char_sheets(pcs,player_count);
+
+
 
     std::ofstream adventure_log;
     adventure_log.open("Adventure_log.txt");
 
-    adventure_log << "Map\n"; 
+    adventure_log << "Map\n";
     adventure_log << dmap.print_map();
     adventure_log << "\n";
 
-    adventure_log << "Monsters\n"; 
+    adventure_log << "Monsters\n";
     for(DungeonMonster monster : monsters){
         adventure_log << monster.print_monster();
     }
     adventure_log << "\n";
-    adventure_log << "Traps\n"; 
+    adventure_log << "Traps\n";
     for(DungeonTrap trap : traps){
         adventure_log << trap.print_trap();
         adventure_log << "\n";
     }
     adventure_log << "\n";
-    adventure_log << "Loot\n"; 
+    adventure_log << "Loot\n";
     for(DungeonItem item : loots.items){
         std::string item_name = item.print_item();
         adventure_log << item_name;
         adventure_log << "\n";
     }
     adventure_log << "\n";
-    
+
     adventure_log.close();
     return 0;
 }
