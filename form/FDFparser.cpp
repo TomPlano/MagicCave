@@ -55,13 +55,41 @@ void FDFparser::prep_char_sheets(Character* characters, int pc_count){
 
         temp["HD"]=characters[i].hit_die;
 
+
+        //skills that dont get bonuses
+        temp["Athletics"] = std::to_string(characters[i].str_mod);
+
+        temp["Acrobatics"]=std::to_string(characters[i].dex_mod);
+        temp["SleightofHand"]=std::to_string(characters[i].dex_mod);
+        temp["Stealth "]=std::to_string(characters[i].dex_mod);
+
+        temp["Arcana"]=std::to_string(characters[i].intel_mod);
+        temp["History "]=std::to_string(characters[i].intel_mod);
+        temp["Investigation "]=std::to_string(characters[i].intel_mod);
+        temp["Nature"]=std::to_string(characters[i].intel_mod);
+        temp["Religion"]=std::to_string(characters[i].intel_mod);
+
+        temp["Animal"]=std::to_string(characters[i].wis_mod);
+        temp["Insight"]=std::to_string(characters[i].wis_mod);
+        temp["Medicine"]=std::to_string(characters[i].wis_mod);
+        temp["Perception "]=std::to_string(characters[i].wis_mod);
+        temp["Survival"]=std::to_string(characters[i].wis_mod);
+
+        temp["Deception "]=std::to_string(characters[i].cha_mod);
+        temp["Intimidation"]=std::to_string(characters[i].cha_mod);
+        temp["Performance"]=std::to_string(characters[i].cha_mod);
+        temp["Persuasion"]=std::to_string(characters[i].cha_mod);
+
+
+
+        //skills that do get bonuses
         for(auto skill: characters[i].skills){
-            temp[skill]=std::to_string(characters[i].prof_bonus);
-            temp[skill+" "]=std::to_string(characters[i].prof_bonus);
+            temp[skill] = temp[skill] +"+"+ std::to_string(characters[i].prof_bonus);
+            temp[skill+" "] = temp[skill] +"+"+  std::to_string(characters[i].prof_bonus);
 
         }
 
-
+        //baselevel saving throws
         temp["ST Strength"]=temp["STRmod"];
         temp["ST Charisma"]=temp["CHAmod"];
         temp["ST Constitution"]=temp["CONmod"];
@@ -69,6 +97,7 @@ void FDFparser::prep_char_sheets(Character* characters, int pc_count){
         temp["ST Intelligence"]=temp["INTmod"];
         temp["ST Wisdom"]=temp["WISmod"];
 
+        //update saving throws
         for(auto profs: characters[i].proficiency){
             std::string prof_copy= profs;
             std::transform(prof_copy.begin(), prof_copy.end(), prof_copy.begin(), toupper);
@@ -76,22 +105,32 @@ void FDFparser::prep_char_sheets(Character* characters, int pc_count){
 
         }
 
+        //other proficiencies
+        temp["ProficienciesLang"] = "Armor: \n";
+        for (auto other: characters[i].armor_profs){
+            temp["ProficienciesLang"]+="\t"+other+"\n";
+        }
+        temp["ProficienciesLang"] += "Weapons: \n";
+        for (auto other: characters[i].weapon_profs){
+            temp["ProficienciesLang"]+="\t"+other+"\n";
+        }
 
+        //starting gold
+        temp["Equipment"]="Spend "+characters[i].gold+ " gp on starting equipment\n";
+
+
+        //passive perseption
         temp["Passive"]="10+"+temp["WISmod"];
-
-
 
 
         //create string to dump to file
         std::string file_contents = build_fdf_contents(temp);
 
         //dump to file
-        print_keys(temp);
-
         std::ofstream output("pdf/player"+std::to_string(i)+".fdf");
         output << file_contents;
         output.close();
-        //print_keys(temp);
+        break;
 
     }
 }

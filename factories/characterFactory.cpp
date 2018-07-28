@@ -49,6 +49,9 @@ Character CharacterFactory::create_character(bool is_npc)
   ch.cha_mod= std::floor((ch.cha-10)/2);
   ch.skills = skill_gen(char_class);
   ch.proficiency=list_reformat(char_class["proficiency"]);
+  ch.armor_profs = list_reformat(char_class["startingProficiencies"]["armor"]);
+  ch.weapon_profs = list_reformat(char_class["startingProficiencies"]["weapons"]);
+  ch.gold = char_class["startingEquipment"]["goldAlternative"].asString();
 
   return ch;
 }

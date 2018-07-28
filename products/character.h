@@ -29,10 +29,14 @@ int cha_mod;
 int prof_bonus;
 int hp;
 int PLACEMENT_ID;
+std::string gold;
 
 std::string hit_die;
 std::list<std::string> skills;
 std::list<std::string> proficiency;
+std::list<std::string> armor_profs;
+std::list<std::string> weapon_profs;
+
 
 
 };
