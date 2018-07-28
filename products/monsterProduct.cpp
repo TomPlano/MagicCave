@@ -8,14 +8,14 @@ DungeonMonster::DungeonMonster(std::string _challenge,
                 std::string _name,
                 std::string _size)
 {
-challenge=_challenge;
-xp=_xp;
-alignment=_alignment;
-type=_type;
-page=_page;
-name=_name;
-size=_size;
-monster_count++;
+    challenge=_challenge;
+    xp=_xp;
+    alignment=_alignment;
+    type=_type;
+    page=_page;
+    name=_name;
+    size=_size;
+    monster_count++;
 
 }
 DungeonMonster::DungeonMonster(){}
@@ -33,3 +33,13 @@ std::string DungeonMonster::get_page(){return page;}
 void DungeonMonster::set_page(std::string s){page=s;}
 std::string DungeonMonster::get_size(){return size;}
 void DungeonMonster::set_size(std::string s){size=s;}
+
+std::string DungeonMonster::print_monster(){
+    char id = PLACEMENT_ID;
+    std::string monsterInfo = "";
+    monsterInfo += "["+std::string(1,id)+"] Page: "+page+"\n";
+    monsterInfo += "\tName: "+name+", Challenge: "+challenge+", XP Reward: "+xp+"\n";
+    monsterInfo += "\tAlignment: "+alignment+", Type: "+type+", Size: "+size+"\n\n";
+
+    return monsterInfo;
+}

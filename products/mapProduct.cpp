@@ -1,6 +1,7 @@
 #include "mapProduct.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
 
 DungeonMap::DungeonMap(int _xSize, int _ySize)
 {
@@ -18,14 +19,16 @@ DungeonMap::~DungeonMap() {
     }
     free(tiles);
 }
-void DungeonMap::print_map()
+std::string DungeonMap::print_map()
 {
-  for(int i = 0; i < xSize; i++)
-  {
-    for(int j = 0; j < ySize; j++)
-    {
-      tiles[i][j].print_tile();
-    }
-    printf("\n");
+    std::string result = "";
+    for(int i = 0; i < xSize; i++)
+        {
+        for(int j = 0; j < ySize; j++)
+            {
+                result += tiles[i][j].print_tile()+"";
+            }
+        result += "\n";
   }
+    return result;
 }

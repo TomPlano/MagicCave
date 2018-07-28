@@ -19,11 +19,17 @@ DungeonMonster MonsterFactory::create_monster(int player_lvl, int player_count)
         usable_members.push_back(all_members[i]);
       }
   }
-  std::uniform_int_distribution<int> exp_distro(0,usable_members.size()-1);
-  std::string exp_level_choice =usable_members[exp_distro(rng)]; //all monsters of a specific xp value
-  std::uniform_int_distribution<int> mon_distro(0,root["count"][exp_level_choice].asInt());
-  Json::Value mon = root[exp_level_choice][std::to_string(mon_distro(rng))];
-  DungeonMonster dm (mon["challange"].asString(),
+  Json::Value mon; 
+
+  do {
+    std::uniform_int_distribution<int> exp_distro(0,usable_members.size()-1);
+    std::string exp_level_choice = usable_members[exp_distro(rng)]; //all monsters of a specific xp value
+    std::uniform_int_distribution<int> mon_distro(0,root["count"][exp_level_choice].asInt());
+    mon = root[exp_level_choice][std::to_string(mon_distro(rng))];
+  } while(mon["name"].asString().empty());
+
+    
+  DungeonMonster dm (mon["challenge"].asString(),
                       mon["xp"].asString(),
                       mon["alignment"].asString(),
                       mon["type"].asString(),

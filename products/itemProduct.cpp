@@ -1,6 +1,5 @@
 #include "itemProduct.h"
 
-int DungeonItem::item_count = 0;
 DungeonItem::DungeonItem(std::string _attunement,
                           std::string _type,
                           std::string _page,
@@ -13,8 +12,6 @@ DungeonItem::DungeonItem(std::string _attunement,
   name = _name;
   rarity = _rarity;
 
-  item_count++;
-  PLACEMENT_ID = "Item"+ std::to_string(item_count);
 }
 
 
@@ -33,3 +30,13 @@ std::string DungeonItem::get_name(){return name;}
 void DungeonItem::set_name(std::string s){name=s;}
 std::string DungeonItem::get_rarity(){return rarity;}
 void DungeonItem::set_rarity(std::string s){rarity=s;}
+
+std::string DungeonItem::print_item(){
+    char id = PLACEMENT_ID;
+    std::string result = "";
+    result += "["+std::string(1,id)+"] Name: "+name+"\n";
+    result += "\t\tPage: "+page+", Attunemnet: "+attunement+"\n";
+    result += "\t\tType: "+type+", Rarity: "+rarity+"\n";
+
+    return result;
+}
