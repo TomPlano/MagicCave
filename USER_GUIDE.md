@@ -3,8 +3,8 @@
 ---
 
 # Contents
-- 1 - [How To](#1-How To)
-- 2 - [Outputs](#1-Outputs)
+- 1 - [How To](#1-How-To)
+- 2 - [Outputs](#2-Outputs)
 
 ---
 
