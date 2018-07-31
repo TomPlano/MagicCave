@@ -9,13 +9,13 @@
 ---
 
 ## 1. How To
-At this stage you should have comipled the code. To run the code simply type ./MagicCave.sh <_height> <_width> <_level> <player_count>
+At this stage you should have comipled the code. To run the code simply type ./MagicCave.sh \<height> \<width> \<level> \<player_count>
 
 The args work as follows: <br />
-First arg <height>: This arg represents the map with to be generated <br />
-Second arg <width>: This arg represents the map height to be generated <br />
-Third arg <level>: This arg represents the average player level in the party <br />
-Fourth arg <player_count>: This arg represents the amount of players in the party <br />
+First arg \<height>: This arg represents the map with to be generated <br />
+Second arg \<width>: This arg represents the map height to be generated <br />
+Third arg \<level>: This arg represents the average player level in the party <br />
+Fourth arg \<player_count>: This arg represents the amount of players in the party <br />
 
 ## 2. Outputs
 All output files are stored in the same directory as the aplication. <br />
