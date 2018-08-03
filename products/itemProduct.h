@@ -2,7 +2,9 @@
 #define ITEM_PRODUCT
 #include <string>
 
-
+/*
+This class is designed to hold information relavent to items found scatter around the map.
+*/
 class DungeonItem
 {
   public:

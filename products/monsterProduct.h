@@ -2,6 +2,11 @@
 #define MONSTER_PRODUCT
 #include <string>
 
+/*
+This class is designed to hold information that represents every monster to be used in the map. 
+
+*/
+
 class DungeonMonster{
   public:
     DungeonMonster(std::string _challenge,
@@ -25,6 +30,7 @@ class DungeonMonster{
     void set_page(std::string s);
     std::string get_size();
     void set_size(std::string s);
+    //This function turns all collected information about the monster and turns it into a printable string for easy viewing.
     std::string print_monster();
 
     static int monster_count;

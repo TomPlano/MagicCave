@@ -11,12 +11,15 @@
 #include <fstream>
 #include "../jsoncpp/dist/json/json.h"
 
-
+/*
+This class is designed to pick items from the json file of items. Using player level to determine rarity.
+*/
 class ItemFactory
 {
   public:
     ItemFactory();
     ~ItemFactory();
+    //The player level is taken and a discrete distribution is applied to determine the rarity of item that should be found in the cave.
     DungeonItem create_item(int player_lvl, int value);
     std::string IntToString ( int number );
 

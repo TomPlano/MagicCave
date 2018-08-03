@@ -11,12 +11,16 @@
 #include <list>
 #include <algorithm>
 
+/*
+This class is designed to generate chacters for the map and players to use. A simple bool is used to distinguish players from NPCs.
+*/
 
 class CharacterFactory
 {
 public:
 CharacterFactory();
 ~CharacterFactory();
+//This function generates random characters from a json file containg class and race information. The bool tag simply distinguishes which list the object is put in after generation.
 Character create_character(bool is_npc);
 
 private:
