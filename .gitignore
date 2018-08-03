@@ -61,3 +61,6 @@ results*
 CMakeLists.txt
 cmake-build-debug/
 
+#output
+Adventure_log.txt
+pdf/
