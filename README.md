@@ -54,7 +54,7 @@ To build this project after cloning
 2. git submodule update
 3. if step 2 fails run "git submodule sync" then repeat step 2.
 4. from the root dir, run make
-5. To build with debug symbols run make DEBUG=1
+5. To build with debug symbols run "make DEBUG=1"
 
 ## 4. Design Concepts
 
