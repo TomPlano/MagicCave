@@ -54,5 +54,5 @@ Feel free to clone to project and contact us with pull requests as well.
 
 ## 4. Running the Game
 At this stage, the tool will need to be built even if you don't plan to develop for it. 
-Please check out the build instructions  [here](https://github.com/TomPlano/MagicCave/blob/devel/Developer_Docs.md), from the developer documents. After that come back here.
+Please check out the build instructions  [here](https://github.com/TomPlano/MagicCave/blob/devel/Developer_Docs.md#2-building-and-running), from the developer documents. After that come back here.
 For info on how to GM with our tool checkout our user guide [here](https://github.com/TomPlano/MagicCave/blob/devel/USER_GUIDE.md).
