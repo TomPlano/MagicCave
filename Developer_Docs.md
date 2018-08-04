@@ -4,7 +4,7 @@
 
 # Contents
 - 1 - [Introduction](#1-introduction)
-- 2 - [Building/Running](#2-building-running)
+- 2 - [Building and Running](#2-building-and-running)
 - 3 - [Adding to Build Chain](#3-adding-to-build-chain)
 - 4 - [Design Concepts](#4-design-concepts)
 - 5 - [Data Prep](#-data-prep)
@@ -31,7 +31,7 @@ At this point you will have collected the required versions of the MagicCave dep
 They will be built along with the rest of the application.
 
 
-## 2. Building/Running
+## 2. Building and Running
 ### 2.1 Building
 Building is entirely handled by tha make tool and is very simple to run.
 ```bash
