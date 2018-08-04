@@ -22,8 +22,11 @@ MapFactory::~MapFactory()
   for(int i = 0; i < xSize; i++)
   {
       free(cellFill[i]);
+      free(buffer[i]);
   }
   free(cellFill);
+  free(buffer);
+
 }
 DungeonMap MapFactory::create_map(int itterations)
 {
@@ -44,7 +47,7 @@ DungeonMap MapFactory::create_map(int itterations)
   {
     for(int j = 0; j < ySize; j++)
     {
-      dungeon_map.tiles[i][j] = Tile(cellFill[i][j]);
+      dungeon_map.tiles[i][j] = Tile (cellFill[i][j]);
     }
   }
 

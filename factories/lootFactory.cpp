@@ -14,7 +14,7 @@ DungeonLoot LootFactory::create_loot(int player_lvl)
   int total_value; //in gp
   if(player_lvl<=5)
   {
-  total_value=400 + player_lvl * 320;
+    total_value=400 + player_lvl * 320;
   }
   else if (player_lvl<=10)
   {
@@ -29,7 +29,7 @@ DungeonLoot LootFactory::create_loot(int player_lvl)
     total_value = 10000+(player_lvl-14)*40000;
   }
 
-  int v= total_value/10;
+  int v = total_value/10;
   for(int i=0; i<10;i++)
   {
     loot_parcel.add_item (ifact.create_item(player_lvl,v));

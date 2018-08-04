@@ -54,3 +54,13 @@ dkms.conf
 # submission objs
 *.job
 results*
+
+#jetbrains nonsense
+.idea/*
+.idea/workspace.xml
+CMakeLists.txt
+cmake-build-debug/
+
+#output
+Adventure_log.txt
+pdf/

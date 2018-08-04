@@ -2,7 +2,9 @@
 #define ITEM_PRODUCT
 #include <string>
 
-
+/*
+This class is designed to hold information relavent to items found scatter around the map.
+*/
 class DungeonItem
 {
   public:
@@ -25,9 +27,9 @@ class DungeonItem
     void set_name(std::string s);
     std::string get_rarity();
     void set_rarity(std::string s);
-
-
-  private:
+    int PLACEMENT_ID;
+    std::string print_item();
+private:
     int value;
     std::string blocktext;
     std::string attunement;

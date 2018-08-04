@@ -14,7 +14,7 @@ count = dict()
 monsters = dict()
 
 for i in data:
-    challenge = str(data[i]["challenge"])
+    challenge = str(data[i]["xp"])
 
     if not challenge.isdigit():
         challenge = float(sum(Fraction(s) for s in challenge.split()))
@@ -22,6 +22,10 @@ for i in data:
     if not challenge in count: 
         count[challenge] = 0
         monsters[challenge] = dict()
+
+    if "environment" in data[i]:
+        data[i].pop('environment')
+
 
     monsters[challenge].update({count[challenge] : data[i]})
     count[challenge] += 1

@@ -4,7 +4,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string>
 
+/*
+This class holds all information relating to traps found throughout the map
+*/
+
+
+/*
+The action the trap takes when activated
+*/
 enum effect{
   Falling_Rocks,
   Log_Swing,
@@ -16,15 +25,24 @@ enum effect{
   Magic,
   effect_END
 };
+/*
+How the trap is triggered
+*/
 enum trigger{
   Preasure_Plate,
   Trip_Wire,
   trigger_END
 };
+/*
+Typical saving throw for the trap
+*/
 enum counters{
   Perception,
   counters_END
 };
+/*
+Effects the trap might have after contact
+*/
 enum trap_mods{
   Poison,
   Spiked,
@@ -32,6 +50,9 @@ enum trap_mods{
   One_Way,
   trap_mods_END
 };
+/*
+If the trap is magical this will be the effect
+*/
 enum magic_eff{
   Missle,
   magic_eff_END
@@ -40,8 +61,10 @@ enum magic_eff{
 class DungeonTrap{
 public:
   DungeonTrap();
-  void print_trap();
+  std::string print_trap();
   int x_coord,y_coord,radius,x_drop,y_drop;
+  static int trap_count;
+  int PLACEMENT_ID;
 private:
   int level;
   effect get_trap_effect(std::mt19937 rng);
