@@ -5,8 +5,8 @@
 # Contents
 - 1 - [Introduction](#1-introduction)
 - 2 - [Lore](#2-lore)
-- 3 - [Building](#3-building)
-- 4 - [Design Concepts](#4-design-concepts)
+- 3 - [Contributing](#3-contributing)
+- 4 - [Running the Game](#4-running-the-game)
 
 ---
 
@@ -46,19 +46,13 @@ and to collect a tax on those adventuring parties lucky enough to make it out
 alive. It now stands open to anyone willing the take the challenge of
 The Cave of Shards. Perhaps one day its secrets will be revealed.
 
-## 3. Building
+## 3. Contributing 
 
-This project contains git submodules, specially jsoncpp.
-To build this project after cloning
-1. git submodule init   
-2. git submodule update
-3. if step 2 fails run "git submodule sync" then repeat step 2.
-4. from the root dir, run make
-5. To build with debug symbols run "make DEBUG=1"
+If you would like to contribute to this project, please checkout the developer docs [here](https://github.com/TomPlano/MagicCave/blob/devel/Developer_Docs.md).
+Feel free to clone to project and contact us with pull requests as well. 
 
-## 4. Design Concepts
 
-- designed to optimism play on a 22x25 game mat or similar
-- large map that is C*X by C*Y where X and Y are the edge dimensions of the play surface
-as decided by players, c is some scalar (8 ish)
-- large map is chopped to size and presented as different rooms.
+## 4. Running the Game
+At this stage, the tool will need to be built even if you don't plan to develop for it. 
+Please check out the build instructions  [here](https://github.com/TomPlano/MagicCave/blob/devel/USER_GUIDE.md), from the developer documents. After that come back here.
+For info on how to GM with our tool checkout our user guide [here](https://github.com/TomPlano/MagicCave/blob/devel/USER_GUIDE.md).

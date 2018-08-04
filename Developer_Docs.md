@@ -11,6 +11,13 @@
 ---
 
 ## 1. Introduction
+First clone the project directory to any location on you computer and enter that directory.
+```bash
+git clone git@github.com:TomPlano/MagicCave.git
+cd MagicCave
+```
+Next we will set up dependencies.
+ 
 ### 1.1 Submodules
 This project contains submodule repos. Submodules must be collected before the project can be built. To collect this 
 repo after cloning the MagicCave repo run th the following from inside the MagicCave top level directory
