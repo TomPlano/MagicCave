@@ -4,7 +4,7 @@
 
 # Contents
 - 1 - [Introduction](#1-introduction)
-- 2 - [Building/Running](#2-building/running)
+- 2 - [Building/Running](#2-building-running)
 - 3 - [Adding to Build Chain](#3-adding-to-build-chain)
 - 4 - [Design Concepts](#4-design-concepts)
 
@@ -79,6 +79,13 @@ factory method pattern. The essential design decision is that factories should d
 data structures without the knowledge to create populate themselves. This is doubly important because of the fact that we are 
 loading in external data to populate objects. By using the factory model, json data only need be loaded once, into the factory
 and then all objects that come out of the factory will be correctly populated. 
+
+All factories files can be found in the factories directory while everything that they product, called products can be found in the 
+products directory. 
+
+Within each of those directories, and in fact throughout the entire project the deceleration and implementation is split 
+between *.h files and  *.cpp. Even though this was more work in the short term, we concluded that the ability for use the .h files
+like interfaces in the future was enough of a reason to split them up in that way. 
 
 
 
