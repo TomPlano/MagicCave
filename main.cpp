@@ -94,6 +94,7 @@ int main (int argc, char* argv[])
     FDFparser parser;
     parser.parse_file("pdf/dnd5eCS");
     parser.prep_char_sheets(pcs,player_count);
+    parser.prep_npc_sheets(npcs,num_npcs);
 
 
     //opens the file that will contain the map and legend

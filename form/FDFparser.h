@@ -18,6 +18,7 @@ public:
     FDFparser(){}
     void parse_file(std::string file_str);
     void prep_char_sheets(Character* characters, int pc_count);
+    void prep_npc_sheets(Character* characters, int npc_count);
     std::string build_fdf_contents(std::map <std::string,std::string> set);
     void print_keys(std::map <std::string,std::string> set);
     std::map <std::string,std::string> key_val;
